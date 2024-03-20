@@ -1,0 +1,531 @@
+﻿###########################
+# South-African TFV events Events
+###########################
+
+add_namespace = tfv_south_africa
+
+# SAF_secure_interests_in_africa completed
+# South-African National focus
+country_event = {
+	id = tfv_south_africa.1
+	title = tfv_south_africa.1.t	# Ask ENG for control over british South-East Africa strip. 
+	desc = tfv_south_africa.1.d		#
+	picture = GFX_report_event_saf_soldiers					#
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tfv_south_africa.1.a	# ENG accepts the proposal
+		
+		ai_chance = {
+			base = 80
+
+		}
+		
+		effect_tooltip = {
+			SAF = {
+			transfer_state = 545
+			transfer_state = 546
+			transfer_state = 547
+			transfer_state = 548
+			transfer_state = 770
+			transfer_state = 771
+			transfer_state = 542
+			transfer_state = 718
+			transfer_state = 538
+			transfer_state = 295
+			transfer_state = 544
+			transfer_state = 540
+			transfer_state = 769
+			transfer_state = 768
+			}
+			
+		}
+		hidden_effect = {
+			SAF = {
+				country_event = { id = tfv_south_africa.2 }
+			}
+		}
+	}
+	
+	option = {
+		name = tfv_south_africa.1.b # ENG refuses the proposal
+		
+		ai_chance = {
+			base = 0
+		}
+		
+		hidden_effect = {
+			SAF = {
+				country_event = { id = tfv_south_africa.3 }
+			}
+		}
+	}
+	option = {
+		name = tfv_south_africa.1.c # ENG compromises
+		trigger = {
+		KEN = { exists = no }
+		ZIM = { exists = no }
+
+		}
+		
+		ai_chance = {
+			base = 20
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0 #don't do this if we are historical!
+			}
+			modifier = {
+				SAF = { NOT = { has_government = democratic} }
+				factor = 4
+			}
+		}
+		effect_tooltip = {
+			custom_effect_tooltip = SAF_colonies_tt
+		}
+		hidden_effect = {
+			SAF = {
+				country_event = { id = tfv_south_africa.4 }
+			}
+		}
+	}
+}
+
+#ENG transfers colonies
+country_event = {
+	id = tfv_south_africa.2
+	title = tfv_south_africa.2.t	#
+	desc = tfv_south_africa.2.d		#
+	picture = GFX_report_event_saf_soldiers_2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tfv_south_africa.2.a
+			transfer_state = 545
+			transfer_state = 546
+			transfer_state = 547
+			transfer_state = 548
+			transfer_state = 770
+			transfer_state = 771
+			transfer_state = 542
+			transfer_state = 718
+			transfer_state = 538
+			transfer_state = 295
+			transfer_state = 544
+			transfer_state = 540
+			transfer_state = 769
+			transfer_state = 768
+		hidden_effect = {
+			news_event = { id = news.260 hours = 6 }
+					}
+	}
+		
+	
+}
+#ENG refuses
+country_event = {
+	id = tfv_south_africa.3
+	title = tfv_south_africa.3.t	#
+	desc = tfv_south_africa.3.d		#
+	picture = GFX_report_event_saf_soldiers_3
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tfv_south_africa.3.a
+	}
+}
+#ENG compromises
+country_event = {
+	id = tfv_south_africa.4
+	title = tfv_south_africa.4.t	#
+	desc = tfv_south_africa.4.d		#
+	picture = GFX_report_event_saf_soldiers					#
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tfv_south_africa.4.a
+
+		if = {
+		limit = { 
+			ZIM = { exists = no }	
+			}
+
+			ZIM = { transfer_state = 545 }
+
+			ENG = {
+			puppet = ZIM 
+				}
+			}
+
+		if = {
+		limit = { 
+			KEN = { exists = no } 
+				}
+			KEN = {
+				transfer_state = 546
+				transfer_state = 547
+				transfer_state = 548
+				}
+			
+			ENG = { 
+				puppet = KEN 
+				}
+			}
+
+		SAF = { transfer_state = 542 }
+		hidden_effect = {
+			news_event = { id = news.261 hours = 6 }
+			}
+		}
+
+		
+	}
+
+#European Colonies Liberation Events (not to be confused with Liberation Events for European Colonies!)
+country_event = {
+	id = tfv_south_africa.60
+	title = tfv_south_africa.60.t	# Freedom for ANG
+	desc = tfv_south_africa.60.d	#
+	picture = GFX_report_event_african_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { #puppet new state
+		name = tfv_south_africa.60.a
+		ai_chance = {
+			base = 100
+		}
+			ANG = { 
+				if = {
+				limit = { 
+					SAF = { controls_state = 540 } 
+						}
+					transfer_state = 540
+					}
+				}
+			SAF = { puppet = ANG }
+			set_country_flag = SAF_released_ANG
+	}
+
+	option = { #full freedom
+		name = tfv_south_africa.60.b
+		ai_chance = {
+			base = 0
+		}
+		ANG = { 
+			if = {
+				limit = { 
+					SAF = { controls_state = 540 } 
+				}
+				transfer_state = 540
+			}
+			hidden_effect = {
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}
+				add_popularity = {
+						ideology = communism
+						popularity = 0.75
+				}
+			}
+		}
+		set_country_flag = SAF_released_ANG
+		SAF = { add_to_faction = ANG }
+	}
+
+	option = { #refuse them because of reasons
+		name = tfv_south_africa.60.c
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = -70
+		}		
+	}
+	
+country_event = {
+	id = tfv_south_africa.61
+	title = tfv_south_africa.61.t	# Freedom for MZB
+	desc = tfv_south_africa.61.d	#
+	picture = GFX_report_event_african_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { #puppet new state
+		name = tfv_south_africa.61.a
+		ai_chance = {
+			base = 100
+		}
+			MZB = { 
+				if = {
+				limit = { 
+					SAF = { controls_state = 544 } 
+						}
+					transfer_state = 544
+					}
+				}
+			SAF = { puppet = MZB }
+			set_country_flag = SAF_released_MZB
+	}
+
+	option = { #full freedom
+		name = tfv_south_africa.61.b
+		ai_chance = {
+			base = 0
+		}
+			MZB = { 
+				if = {
+					limit = { 
+						SAF = { controls_state = 544 } 
+					}
+					transfer_state = 544
+				}
+				hidden_effect = {
+					set_politics = {
+						ruling_party = communism
+						elections_allowed = no
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.75
+					}
+				}
+			}
+
+		set_country_flag = SAF_released_MZB
+		SAF = { add_to_faction = MZB }		
+	}
+
+	option = { #refuse them because of reasons
+		name = tfv_south_africa.61.c
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = -70
+		}		
+	}
+
+country_event = {
+	id = tfv_south_africa.62
+	title = tfv_south_africa.62.t	# Freedom for COG
+	desc = tfv_south_africa.62.d	#
+	picture = GFX_report_event_african_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { #puppet new state
+		name = tfv_south_africa.61.a
+		ai_chance = {
+			base = 100
+		}
+			COG = { 
+				if = {
+					limit = { 
+						SAF = { 
+							controls_state = 295 
+							controls_state = 538 
+							controls_state = 718 
+							} 
+
+						}
+							transfer_state = 295
+							transfer_state = 538
+							transfer_state = 718
+					}
+				}
+			SAF = { puppet = COG }
+			set_country_flag = SAF_released_COG
+	}
+
+	option = { #full freedom
+		name = tfv_south_africa.61.b
+		ai_chance = {
+			base = 0
+		}
+			COG = { 
+				if = {
+					limit = { 
+						SAF = { 
+							controls_state = 295 
+							controls_state = 538 
+							controls_state = 718 
+							} 
+
+						}
+						transfer_state = 295
+						transfer_state = 538
+						transfer_state = 718
+					}
+				hidden_effect = {
+					set_politics = {
+						ruling_party = communism
+						elections_allowed = no
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.75
+					}
+				}	
+			}
+						
+			set_country_flag = SAF_released_COG
+			SAF = { add_to_faction = COG }		
+	}
+
+	option = { #refuse them because of reasons
+		name = tfv_south_africa.61.c
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = -70
+		}		
+	}
+
+country_event = {
+	id = tfv_south_africa.63
+	title = tfv_south_africa.63.t	# Freedom for ZIM
+	desc = tfv_south_africa.63.d	#
+	picture = GFX_report_event_african_soldiers
+	
+
+	is_triggered_only = yes
+	
+	option = { #puppet new state
+		name = tfv_south_africa.63.a
+		ai_chance = {
+			base = 100
+		}
+			ZIM = { 
+				if = {
+				limit = { 
+					SAF = { 
+						controls_state = 545  
+						} 
+
+					}
+						transfer_state = 545
+					}
+				}
+			SAF = { puppet = ZIM }
+			set_country_flag = SAF_released_ZIM
+	}
+
+	option = { #full freedom
+		name = tfv_south_africa.63.b
+		ai_chance = {
+			base = 0
+		}
+			ZIM = { 
+				if = {
+					limit = { 
+						SAF = { 
+							controls_state = 545 
+							
+							} 
+
+						}
+						transfer_state = 545
+						
+					}
+				hidden_effect = {
+					set_politics = {
+						ruling_party = communism
+						elections_allowed = no
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.75
+					}
+				}
+			}
+
+			set_country_flag = SAF_released_ZIM
+			SAF = { add_to_faction = ZIM }		
+	}
+
+	option = { #refuse them because of reasons
+		name = tfv_south_africa.63.c
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = -70
+		}		
+	}
+
+country_event = {
+	id = tfv_south_africa.64
+	title = tfv_south_africa.64.t	# Freedom for KEN
+	desc = tfv_south_africa.64.d	#
+	picture = GFX_report_event_african_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { #puppet new state
+		name = tfv_south_africa.64.a
+		ai_chance = {
+			base = 100
+		}
+			KEN = { 
+				if = {
+				limit = { 
+					SAF = { 
+						controls_state = 546
+						controls_state = 547
+						controls_state = 548 
+						} 
+
+					}
+						transfer_state = 546
+						transfer_state = 547
+						transfer_state = 548
+					}
+				}
+			SAF = { puppet = KEN }
+			set_country_flag = SAF_released_KEN
+	}
+
+	option = { #full freedom
+		name = tfv_south_africa.64.b
+		ai_chance = {
+			base = 0
+		}
+			KEN = { 
+				if = {
+					limit = { 
+						SAF = { 
+							controls_state = 546 
+							controls_state = 547 
+							controls_state = 548 
+							} 
+
+						}
+						transfer_state = 546
+						transfer_state = 547
+						transfer_state = 548
+					}
+				hidden_effect = {
+					set_politics = {
+						ruling_party = communism
+						elections_allowed = no
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.75
+					}
+				}
+			}			
+			set_country_flag = SAF_released_KEN
+			SAF = { add_to_faction = KEN }		
+	}
+
+	option = { #refuse them because of reasons
+		name = tfv_south_africa.64.c
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = -70
+		}		
+	}
