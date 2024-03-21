@@ -15,8 +15,11 @@
 
 
 GER_unit_production = {
-	enable = {
+	allowed = {
 		original_tag = GER
+	}
+	enable = {
+		always = yes
 	}
 	abort = {
 		always = no
@@ -26,12 +29,6 @@ GER_unit_production = {
 		type = role_ratio
 		id = garrison
 		value = 4
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = suppression
-		value = 6
 	}
 	
 	ai_strategy = {
@@ -43,7 +40,7 @@ GER_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = mountaineers
-		value = 2
+		value = 0
 	}
 
 	ai_strategy = {
@@ -61,7 +58,7 @@ GER_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = motorized
-		value = -200 #because doctrine this = 2
+		value = 0 #because doctrine this = 2
 	}
 
 	ai_strategy = {
@@ -73,13 +70,13 @@ GER_unit_production = {
 	ai_strategy = {
 		type = role_ratio
 		id = armor
-		value = -17 #because doctrine this = 3
+		value = -7 #because doctrine this = 3
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
-		value = 70 #88 to 70
+		value = 75 #88 to 70
 	}
 	
 	#Air unit factors
@@ -215,19 +212,22 @@ GER_unit_production = {
 	}
 	ai_strategy = {
 		type = equipment_variant_production_factor
-		id = strat_bomber_equipment
-		value = -100
-	}
-	ai_strategy = {
-		type = equipment_variant_production_factor
 		id = support_equipment
 		value = 30
 	}
+
+	ai_strategy = { #added to railway gun define (set to 0 by default, increased in default strategies)
+		type = railway_gun_divisions_ratio
+		value = 1
+	}
+
 }	
 
 GER_anti_armor = {
-	enable = {
+	allowed = {
 		original_tag = GER
+	}
+	enable = {
 		ai_wants_divisions > 5 #Decreasing the amount of motorized the AI wants
 		
 		any_enemy_country = {
@@ -245,19 +245,21 @@ GER_anti_armor = {
 
 	ai_strategy = {
 		type = role_ratio
-		id = anti_armor
+		id = motorized
 		value = 15
 	}
 }
 
 GER_armored_production = {
-	enable = {
-		date > 1939.1.1
+	allowed = {
 		original_tag = GER
+	}
+	enable = {
+		date > 1938.8.1
 		ai_wants_divisions > 24 #Decreasing the amount of tanks the AI wants
 	}
 	abort = {
-		ai_wants_divisions < 25 #Decreasing the amount of tanks the AI wants
+		ai_wants_divisions < 10 #Decreasing the amount of tanks the AI wants
 	}
 
 	ai_strategy = {
@@ -268,29 +270,44 @@ GER_armored_production = {
 }
 
 GER_halt_light_armor_production_in_transitioning = {
-	enable = {
+	allowed = {
 		original_tag = GER
+	}
+	enable = {
 		has_template_majority_unit = medium_armor
 		OR = {
-			has_equipment = { light_tank_equipment > 600 }
-			date > 1939.1.1
+			has_equipment = { light_tank_chassis > 600 }
+			date > 1938.8.1
 		}		
 	}
 	abort = {
-		# once we start we never go back to light armor
+		always = no
 	}
 
 	ai_strategy = {
 		type = equipment_variant_production_factor
-		id = light_tank_equipment
+		id = light_tank_chassis
 		value = -100
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = medium_tank_chassis
+		value = 50
+	}
+	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = -50 #downprio this for some more tanks
 	}
 }
 
-
 GER_highered_armored_production = {
-	enable = {
+	allowed = {
 		original_tag = GER
+	}
+	enable = {
 		num_of_military_factories > 109
 	}
 	abort = {
@@ -305,10 +322,12 @@ GER_highered_armored_production = {
 }
 
 GER_dont_waste_xp_until_medium_armor = {
-	enable = {
-		original_tag = GER		
+	allowed = {
+		original_tag = GER
 	}
-
+	enable = {
+		always = yes
+	}
 	abort = {	
 		has_template_majority_unit = medium_armor
 	}
@@ -327,10 +346,14 @@ GER_dont_waste_xp_until_medium_armor = {
 }
 
 GER_super_boost_light_for_med_armor = {
-	
-	enable = {
+	allowed = {
 		original_tag = GER
-		has_tech = basic_medium_tank
+	}	
+	enable = {
+		OR = {
+			has_tech = basic_medium_tank
+			has_tech = basic_medium_tank_chassis
+		}
 		NOT = { has_template_ai_majority_unit = medium_armor }
 	}
 
@@ -340,8 +363,9 @@ GER_super_boost_light_for_med_armor = {
 
 	# lets do changes more often during this period too
 	ai_strategy = {
-		type = template_xp_reserve 
-		value = -125
+		type = land_xp_spend_priority
+		id = division_template
+		value = 100
 	}
 
 	# this is gateway
@@ -366,10 +390,14 @@ GER_super_boost_light_for_med_armor = {
 }
 
 GER_super_boost_light_for_modern_armor = {
-	
-	enable = {
+	allowed = {
 		original_tag = GER
-		has_tech = main_battle_tank
+	}
+	enable = {
+		OR = {
+			has_tech = main_battle_tank
+			has_tech = main_battle_tank_chassis
+		}
 		NOT = { has_template_ai_majority_unit = modern_armor }
 	}
 
@@ -379,8 +407,9 @@ GER_super_boost_light_for_modern_armor = {
 
 	# lets do changes more often during this period too
 	ai_strategy = {
-		type = template_xp_reserve 
-		value = -125
+		type = land_xp_spend_priority
+		id = division_template
+		value = 100
 	}
 
 	# this is gateway
@@ -397,15 +426,49 @@ GER_super_boost_light_for_modern_armor = {
 	}
 }
 
+GER_how_about_some_more_transport_planes = {
+	allowed = {
+		original_tag = GER
+	}
+	enable = {
+		num_of_military_factories > 50
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = air_transport
+		value = 1
+	}
+}
 
 GER_template_design = {
-	enable = {
-	
+	allowed = {
 		original_tag = GER
-		date < 1940.1.1				
 	}
-	abort = { 
+	enable = {
+		date < 1940.1.1
+	}
+	abort = {
 		date > 1940.1.1
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = -50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = infantry
+		value = 20
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = artillery
+		value = 20
 	}
 
 	ai_strategy = {
@@ -419,17 +482,11 @@ GER_template_design = {
 		id = cavalry
 		value = -100
 	}
-	
+
 	ai_strategy = {
 		type = template_prio
 		id = light_armor
 		value = 30
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = medium_armor
-		value = 50
 	}
 
 	ai_strategy = {
@@ -446,8 +503,10 @@ GER_template_design = {
 }
 
 war_with_poland = {
+	allowed = {
+		original_tag = GER
+	}
 	enable = {
-		tag = GER
 		has_completed_focus = GER_demand_memel
 		country_exists = POL
 	}
