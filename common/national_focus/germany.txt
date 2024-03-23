@@ -1385,7 +1385,7 @@ focus_tree = {
 		id = GER_anti_comitern_pact
 		icon = GFX_goal_anti_comintern_pact
 		prerequisite = { focus = GER_rhineland  }
-		x = -2
+		x = 2
 		y = 1
 		relative_position_id = GER_rhineland
 		cost = 5
@@ -1405,7 +1405,7 @@ focus_tree = {
 	focus = {
 		id = GER_ussr_war_goal
 		icon = GFX_GER_Generalplan_Ost
-		prerequisite = { focus = GER_anti_comitern_pact }
+		prerequisite = { focus = GER_war_with_france }
 		will_lead_to_war_with = SOV
 
 		cancel = {
@@ -1413,7 +1413,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
-		relative_position_id = GER_anti_comitern_pact
+		relative_position_id = GER_war_with_france
 		cost = 1
 		
 		available = {
@@ -1479,8 +1479,8 @@ focus_tree = {
 		}
 
 		x = 0
-		y = 2
-		relative_position_id = GER_anti_comitern_pact
+		y = 1
+		relative_position_id = GER_ussr_war_goal
 		cost = 1
 
 		completion_reward = {
@@ -1531,7 +1531,7 @@ focus_tree = {
 			}
 		}
 		cancel_if_invalid = no
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = GER_rhineland
 		cost = 10
@@ -2224,7 +2224,7 @@ focus_tree = {
 	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_GER_Kriegsmarine
-		x = 30
+		x = 29
 		y = 0
 		cost = 2
 		ai_will_do = {
@@ -2311,8 +2311,9 @@ focus_tree = {
 	focus = {
 	    id = GER_capital_ship_raiding_fleets
 		prerequisite = {focus = GER_naval_rearmament}
-		x = 26
+		x = -4
 		y = 1
+		relative_position_id = GER_naval_rearmament
 		icon = GFX_goal_generic_navy_battleship
 		cost = 5
 		completion_reward = {
@@ -2329,8 +2330,9 @@ focus_tree = {
 	focus = {
 	    id = GER_wilhelms_dream
 		prerequisite = {focus = GER_capital_ship_raiding_fleets }
-		x = 23
-		y = 2
+		x = -3
+		y = 1
+		relative_position_id = GER_capital_ship_raiding_fleets
 		icon = GFX_focus_ger_break_anglo_french_colonial_hegemony
 		cost = 2
 		available = {
@@ -2347,8 +2349,9 @@ focus_tree = {
 		id = GER_Introduce_New_Carriers
 		icon = GFX_goal_generic_navy_carrier
 		prerequisite = {focus = GER_capital_ship_raiding_fleets }
-		x = 25
-		y = 2
+		x = -1
+		y = 1
+		relative_position_id = GER_capital_ship_raiding_fleets
 		cost = 5
 		
 		ai_will_do = {
@@ -2400,8 +2403,9 @@ focus_tree = {
 	focus = {
 	    id = GER_ocean_focused_navy
 		prerequisite = {focus = GER_naval_rearmament}
-		x = 28
+		x = -2
 		y = 1
+		relative_position_id = GER_naval_rearmament
 		icon = GFX_goal_generic_sea_focused_navy
 		cost = 5
 		completion_reward = {
@@ -2418,8 +2422,9 @@ focus_tree = {
 	focus = {
 	    id = GER_coastal_focused_navy
 		prerequisite = {focus = GER_naval_rearmament}
-		x = 32
+		x = 2
 		y = 1
+		relative_position_id = GER_naval_rearmament
 		icon = goal_generic_coastal_navy
 		cost = 5
 		completion_reward = {
@@ -2436,8 +2441,9 @@ focus_tree = {
 	focus = {
 	    id = GER_submarine_raiding_fleets
 		prerequisite = {focus = GER_naval_rearmament}
-		x = 34
+		x = 4
 		y = 1
+		relative_position_id = GER_naval_rearmament
 		icon = GFX_goal_generic_navy_submarine
 		cost = 5
 		completion_reward = {
@@ -2454,8 +2460,9 @@ focus_tree = {
 	focus = {
 	    id = GER_improve_submarine_designs
 		prerequisite = {focus = GER_submarine_raiding_fleets}
-		x = 33
-		y = 2
+		x = -1
+		y = 1
+		relative_position_id = GER_submarine_raiding_fleets
 		cost = 5
 		available = {
 		    date > 1939.1.1
@@ -2471,8 +2478,9 @@ focus_tree = {
 	focus = {
 	    id = GER_wolfpacks
 		prerequisite = {focus = GER_submarine_raiding_fleets}
-		x = 35
-		y = 2
+		x = 1
+		y = 1
+		relative_position_id = GER_submarine_raiding_fleets
 		cost = 5
 		icon = GFX_goal_generic_wolf_pack
 		completion_reward = {
@@ -2492,8 +2500,9 @@ focus_tree = {
 		prerequisite = {focus = GER_use_bases_in_france }
 		cost = 5
 		icon = GFX_goal_Marineakademie
-		x = 34
-		y = 4
+		x = 0
+		y = 3
+		relative_position_id = GER_submarine_raiding_fleets
 		completion_reward = {
 		    add_ideas = {
 			    GER_wolfpacks
@@ -2508,8 +2517,9 @@ focus_tree = {
 	    id = GER_scrap_bigger_vessels
 		prerequisite = {focus = GER_submarine_raiding_fleets}
 		cost = 5
-		x = 37
-		y = 2
+		x = 3
+		y = 1
+		relative_position_id = GER_submarine_raiding_fleets
 		icon = GFX_SIA_maritmesilkroad
 		completion_reward = {
 			GER = {if = { limit = { has_idea = GER_british_naval_dominance_challenged } remove_ideas = GER_british_naval_dominance_challenged} }
@@ -2523,8 +2533,9 @@ focus_tree = {
 	focus = {
 	    id = GER_bismarck
 		prerequisite = {focus = GER_capital_ship_raiding_fleets}
-		x = 27
-		y = 2
+		x = 1
+		y = 1
+		relative_position_id = GER_capital_ship_raiding_fleets
 		icon = GFX_GENERIC_Design_Contemporary_Equipment_Standards
 		cost = 5
 		available = {
@@ -2539,8 +2550,9 @@ focus_tree = {
 	focus = {
 	    id = GER_schlachtschiff_h
 		prerequisite = {focus = GER_bismarck focus = GER_Introduce_New_Carriers}
-		x = 26
-		y = 3
+		x = 0
+		y = 2
+		relative_position_id = GER_capital_ship_raiding_fleets
 		icon = GFX_GENERIC_Design_Contemporary_Equipment_Standards
 		cost = 5
 		available = {
@@ -2555,8 +2567,9 @@ focus_tree = {
 	focus = {
 	    id = GER_further_naval_expansion
 		prerequisite = {focus = GER_naval_rearmament}
-		x = 30
+		x = 0
 		y = 2
+		relative_position_id = GER_naval_rearmament
 		icon = GFX_GER_Plan_Z
 		cost = 5
 		completion_reward = {
@@ -2601,8 +2614,9 @@ focus_tree = {
 	focus = {
 	    id = GER_use_bases_in_norway
 		prerequisite = {focus = GER_further_naval_expansion}
-		x = 28
-		y = 3
+		x = -2
+		y = 1
+		relative_position_id = GER_further_naval_expansion
 		icon = GFX_goal_navy_decision
 		cost = 2
 		available = {
@@ -2625,8 +2639,9 @@ focus_tree = {
 	focus = {
 	    id = GER_use_bases_in_france # unique fransa dockyardları astde
 		prerequisite = {focus = GER_further_naval_expansion}
-		x = 32
-		y = 3
+		x = 2
+		y = 1
+		relative_position_id = GER_further_naval_expansion
 		icon = GFX_goal_navy_decision
 		cost = 5
 		available = {
@@ -2659,8 +2674,9 @@ focus_tree = {
 	focus = {
 	    id = GER_use_bases_in_holland
 		prerequisite = {focus = GER_further_naval_expansion}
-		x = 30
-		y = 3
+		x = 0
+		y = 1
+		relative_position_id = GER_further_naval_expansion
 		icon = GFX_goal_navy_decision
 		cost = 2
 		available = {
@@ -2685,8 +2701,9 @@ focus_tree = {
 	    id = GER_operation_rheinubung
 		prerequisite = {focus = GER_bismarck focus = GER_Introduce_New_Carriers}
 		prerequisite = {focus = GER_use_bases_in_norway}
-		x = 25
-		y = 4
+		x = 0
+		y = 2
+		relative_position_id = GER_Introduce_New_Carriers
 		icon = GFX_goal_Marineakademie
 		cost = 5
 		completion_reward = {
@@ -2703,8 +2720,9 @@ focus_tree = {
 	focus = {
 	    id = GER_operation_ostfront
 		prerequisite = {focus = GER_operation_rheinubung}
-		x = 25
-		y = 5
+		x = 0
+		y = 1
+		relative_position_id = GER_operation_rheinubung
 		icon = GFX_goal_Marineakademie
 		cost = 5
 		completion_reward = {
@@ -2723,8 +2741,9 @@ focus_tree = {
 		prerequisite = {focus = GER_use_bases_in_france}
 		prerequisite = {focus = GER_use_bases_in_holland}
 		prerequisite = {focus = GER_use_bases_in_norway}
-		x = 30
-		y = 4
+		x = 0
+		y = 1
+		relative_position_id = GER_use_bases_in_holland
 		cost = 5
 		icon = GFX_focus_AST_never_gallipoli
 		completion_reward = {
@@ -2743,7 +2762,7 @@ focus_tree = {
 		available = {
 			GER = { controls_state = 16 }
 		}
-		x = 0
+		x = -2
 		y = 1
 		relative_position_id = GER_war_with_france 
 		cost = 5
