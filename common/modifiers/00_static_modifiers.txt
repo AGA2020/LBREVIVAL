@@ -123,40 +123,30 @@ night = { # On province. Multiplied by amount of darkness.
 	naval_retreat_speed = 0.1
 }
 
-occupation_policy_1 = { # Gentlest
-	resistance_tick = -0.6
-	local_resources = -0.3
-	local_manpower = -0.7
-	local_factories = -0.6
-}
-occupation_policy_2 = { # Gentle
-	resistance_tick = -0.4
-	local_resources = -0.2
-	local_manpower = -0.8
-	local_factories = -0.4
-	occupation_cost = 0.01
-}
-occupation_policy_3 = { # Harsh
-	resistance_tick = -0.2
-	local_resources = -0.1
-	local_manpower = -0.9
-	local_factories = -0.2
-	occupation_cost = 0.02
-}
-occupation_policy_4 = { # Harshest
-	#resistance_tick = 0.0
-	#local_resources = 0.0
-	local_manpower = -1.0
-	#local_factories = 0.0
-	occupation_cost = 0.03
+# The following is multiplied by local resistance strength.
+resistance_effect = {
+	#local_supplies = -0.5
+	#local_intel_to_enemies = 1
+	#local_factory_sabotage = 0.75
+	#attrition = 0.25
 }
 
 # The following is multiplied by local resistance strength.
-resistance_effect = {
-	local_supplies = -0.5
-	local_intel_to_enemies = 1
-	local_factory_sabotage = 0.75
-	attrition = 0.25
+resistance_effect_base = {
+	# todo - spy defense
+}
+
+# For compliance base + effect * compliance_level will be applied as a modifier.
+compliance_effect_base = {
+	#local_factories = -0.75
+	#local_manpower = -0.75
+	#local_resources = -0.75
+}
+
+compliance_effect = {
+	local_factories = 0.65
+	local_non_core_manpower = 0.18
+	local_resources = 0.65 #was 0.6
 }
 
 # On States
@@ -164,7 +154,14 @@ non_core = {
 	local_building_slots_factor = -0.5
 }
 
+# On States that are controlled by a non-core country
+non_core_controller = {
+	local_building_slots_factor = -0.5
 
+	local_factories = -0.75
+	#local_manpower = -0.75
+	local_resources = -0.65
+}
 
 lacking_consumer_goods = {
 }
@@ -285,6 +282,9 @@ war_support_bad_modifier = {
 	surrender_limit = -0.3
 }
 
+war_support_during_war = { #Applied during war, scaled from 0-100% with war support, not split.
+	stability_factor = -0.3
+}
 
 attache_sent = {
 	war_support_factor = 0.1
