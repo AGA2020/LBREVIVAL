@@ -1,0 +1,46 @@
+
+state={
+	id=144
+	name="STATE_144"
+	manpower = 355251
+	
+	state_category = rural
+	
+	resources={
+		steel= 50
+		tungsten = 50
+	}
+
+	history={
+		owner = NOR
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+			192 = {
+				naval_base = 3
+			}
+			9116 = {
+				naval_base = 3
+			}
+			11050 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			192 1
+		}
+		victory_points = {
+			9116 1
+		}
+		victory_points = {
+			11050 1
+		}
+		add_core_of = NOR
+	}
+
+	provinces = {
+		38 192 3034 3132 3145 9126 11157 6214
+	}
+
+	local_supplies = 0.0 
+}

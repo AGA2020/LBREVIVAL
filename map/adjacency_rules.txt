@@ -9,8 +9,7 @@
 #Name is how you refer to the rule in adjecencies.csv
 
 #Suez Canal
-adjacency_rule
-{
+adjacency_rule = {
 	name = "SUEZ_CANAL"
 
 	contested =
@@ -57,8 +56,7 @@ adjacency_rule
 }
 
 #Gibraltar Strait
-adjacency_rule
-{
+adjacency_rule = {
 	name = "GIBRALTAR_STRAIT"
 
 	contested =
@@ -96,8 +94,7 @@ adjacency_rule
 	offset = { -31.0 0.0 -2.0 }
 }
 #Albanian Strait
-adjacency_rule
-{
+adjacency_rule = {
 	contested =
 	{
 		army = no
@@ -137,8 +134,7 @@ adjacency_rule
 }
 
 #Øresund - (Østersøen <-> Kattegat/Skagerak/Nordsøen)
-adjacency_rule
-{
+adjacency_rule = {
 	name = "DANISH_BELTS_STRAIT"
 
 	contested =
@@ -177,8 +173,7 @@ adjacency_rule
 }
 
 #Panama Canal
-adjacency_rule
-{
+adjacency_rule = {
 	name = "PANAMA_CANAL"
 
 	contested =
@@ -225,8 +220,7 @@ adjacency_rule
 }
 
 #Turkish Straits
-adjacency_rule
-{
+adjacency_rule = {
 	name = "BOSPHORUS_STRAIT"
 
 	contested =
@@ -265,8 +259,7 @@ adjacency_rule
 }
 
 #Kiel Canal
-adjacency_rule
-{
+adjacency_rule = {
 	name = "KIEL_CANAL"
 
 	contested =
@@ -304,8 +297,7 @@ adjacency_rule
 	offset = { 5 0 -6 }
 }
 #Shimonoseki-kaikyō
-adjacency_rule
-{
+adjacency_rule = {
 	name = "SHIMONOSEKI"
 
 	contested =
@@ -343,8 +335,7 @@ adjacency_rule
 	offset = { 1 -2 6 }
 }
 #Dover Strait - 34 km
-adjacency_rule
-{
+adjacency_rule = {
 	contested =
 	{
 		army = yes
@@ -383,8 +374,7 @@ adjacency_rule
 	name = "DOVER_STRAIT"
 }
 #Bab-el-Mandeb Strait (Djibouti -Yemen) - 21 km
-adjacency_rule
-{
+adjacency_rule = {
 	contested =
 	{
 		army = no
@@ -423,8 +413,7 @@ adjacency_rule
 	name = "BAB-EL-MANDEB_STRAIT"
 }
 #Strait of Malacca
-adjacency_rule
-{
+adjacency_rule = {
 	name = "MALACCA_STRAIT"
 
 	contested =
@@ -462,8 +451,7 @@ adjacency_rule
 	offset = { -5 0 -7 }
 }
 #Sunda Strait (Java to Sumatra) - 26 km
-adjacency_rule
-{
+adjacency_rule = {
 	contested =
 	{
 		army = no
@@ -502,8 +490,7 @@ adjacency_rule
 	name = "SUNDA_STRAIT"
 }
 #Bali, Lombok and alas Straits (southern Indonesian islands) 2.4, 21 and 12 km
-adjacency_rule
-{
+adjacency_rule = {
 	contested =
 	{
 		army = yes
@@ -542,8 +529,7 @@ adjacency_rule
 	name = "LOMBOK_STRAIT"
 }
 #Sape Strait (around Komodo Island) - 15 km
-adjacency_rule
-{
+adjacency_rule = {
 	contested =
 	{
 		army = yes
@@ -582,8 +568,7 @@ adjacency_rule
 	name = "SAPE_STRAIT"
 }
 #Tsugaru Strait - (Honshu to Hokkaido) - 20 km
-adjacency_rule
-{
+adjacency_rule = {
 	contested =
 	{
 		army = yes
@@ -622,8 +607,7 @@ adjacency_rule
 	name = "TSUGARU_STRAIT"
 }
 #Kerch Strait (east Crimea) - 3.1 km
-adjacency_rule
-{
+adjacency_rule = {
 	contested =
 	{
 		army = no
@@ -662,8 +646,7 @@ adjacency_rule
 	name = "KERCH_STRAIT"
 }
 #North Channel/Strait of Moyle (Scotland to Ireland) - 21km
-adjacency_rule
-{
+adjacency_rule = {
 	contested =
 	{
 		army = yes
@@ -702,8 +685,7 @@ adjacency_rule
 	name = "MOYLE_STRAIT"
 }
 #Stretto di Messina
-adjacency_rule
-{
+adjacency_rule = {
 	name = "MESSINA_STRAIT"
 
 	contested =
