@@ -226,7 +226,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6979;11767;sea;5864;-1;-1;-1;-1;;ALBANIAN_STRAIT_PASS
 13196;13314;sea;9092;-1;-1;-1;-1;;Northern Quebec
 7661;7477;sea;1271;-1;-1;-1;-1;;BAKU
-10904;13312;sea;2919;-1;-1;-1;-1;;Persian Gulf ferries
+
 2291;2124;;-1;-1;-1;-1;-1;SAPE_STRAIT;
 6824;5946;;-1;-1;-1;-1;-1;TSUGARU_STRAIT;
 2800;2776;;-1;-1;-1;-1;-1;BAB-EL-MANDEB_STRAIT;

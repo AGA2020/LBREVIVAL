@@ -2,23 +2,33 @@ on_actions = {
 	on_startup = {
 		effect = {
 			FRF = { add_state_core = 772 }
-			SOV = { transfer_state = 12 transfer_state = 13 transfer_state = 414 transfer_state = 411 transfer_state = 329 transfer_state = 416 transfer_state = 266 transfer_state = 421 transfer_state = 420 transfer_state = 419 transfer_state = 418 transfer_state = 417 }
+			SOV = { transfer_state = 415 transfer_state = 267 transfer_state = 12 transfer_state = 13 transfer_state = 414 transfer_state = 411 transfer_state = 329 transfer_state = 416 transfer_state = 266 transfer_state = 421 transfer_state = 420 transfer_state = 419 transfer_state = 418 transfer_state = 417 }
 			AST = { transfer_state = 723 add_state_core = 723 transfer_state = 635 transfer_state = 738 transfer_state = 669 transfer_state = 284 add_state_core = 284 }
-			ENG = { transfer_state = 413 transfer_state = 412 transfer_state = 676 transfer_state = 673 transfer_state = 672 transfer_state = 668 transfer_state = 667 transfer_state = 553 transfer_state = 554 transfer_state = 294 transfer_state = 292 transfer_state = 293 transfer_state = 291 transfer_state = 113 transfer_state = 336 transfer_state = 134 transfer_state = 135 transfer_state = 335 transfer_state = 334 transfer_state = 333 }
+			ENG = { transfer_state = 553 transfer_state = 858 transfer_state = 856 transfer_state = 859 transfer_state = 854 transfer_state = 855 transfer_state = 675 transfer_state = 413 transfer_state = 412 transfer_state = 676 transfer_state = 673 transfer_state = 672 transfer_state = 668 transfer_state = 667 transfer_state = 553 transfer_state = 554 transfer_state = 294 transfer_state = 292 transfer_state = 293 transfer_state = 291 transfer_state = 113 transfer_state = 336 transfer_state = 134 transfer_state = 135 transfer_state = 335 transfer_state = 334 transfer_state = 333 }
 			ITA = { transfer_state = 271 transfer_state = 44 }
 			USA = { transfer_state = 623 transfer_state = 624 transfer_state = 628 transfer_state = 627 transfer_state = 626 transfer_state = 625 }
 			RAJ = { transfer_state = 410 transfer_state = 324 transfer_state = 321 }
 			BEL = { transfer_state = 8 add_state_core = 8 }
-			ROM = { transfer_state = 48 add_state_core = 48 transfer_state = 211 add_state_core = 211 transfer_state = 212 add_state_core = 212 }
+			ROM = { transfer_state = 801 transfer_state = 48 add_state_core = 48 transfer_state = 211 add_state_core = 211 transfer_state = 212 add_state_core = 212 }
 			JAP = { transfer_state = 611 transfer_state = 610 transfer_state = 717 transfer_state = 716 transfer_state = 715 transfer_state = 714 }
 			MAD = { remove_state_core = 708 remove_state_core = 706 }
-			HAW = { remove_state_core = 629 remove_state_core = 630 remove_state_core = 631 }
-			BUL = { remove_state_core = 211 remove_state_core = 212 }
+			HAW = { remove_state_core = 642 remove_state_core = 629 remove_state_core = 630 remove_state_core = 631 }
+			BUL = { remove_state_core = 801 remove_state_core = 211 remove_state_core = 212 }
+			CAR = { remove_state_core = 660 }
+			UAE = { remove_state_core = 658 }
+			TMS = { remove_state_core = 584 }
+			YAM = { remove_state_core = 579 }
+			TAY = { remove_state_core = 516 }
+			TUN = { remove_state_core = 458 }
+			FER = { remove_state_core = 563 remove_state_core = 562 remove_state_core = 561 remove_state_core = 560 remove_state_core = 637 }
 			PAP = { remove_state_core = 2 }
 			DNZ = { remove_state_core = 85 }
+			AFG = { remove_state_core = 415 remove_state_core = 267 }
+			OVO = { remove_state_core = 580 remove_state_core = 577 }	
 			EST = { remove_state_core = 13 }			
 			LAT = { remove_state_core = 12 }			
 			COR = { remove_state_core = 1 }
+			SER = { remove_state_core = 107 }
 			TAN = { remove_state_core = 329 }
 			ETH = { remove_state_core = 271 }
 			ORO = { remove_state_core = 271 }
@@ -32,7 +42,7 @@ on_actions = {
 			BSK = { remove_state_core = 651 }
 			SOL = { remove_state_core = 634 }
 			FSM = { remove_state_core = 633 }
-			GUM = { remove_state_core = 632 }
+			GUM = { remove_state_core = 638 remove_state_core = 632 }
 			RWA = { remove_state_core = 768 }
 			BRD = { remove_state_core = 769 }
 			MLW = { remove_state_core = 770 }
@@ -49,11 +59,11 @@ on_actions = {
 			BAS = { remove_state_core = 692 }	
 			TRI = { remove_state_core = 691 }			
 			LAO = { remove_state_core = 670 }
-			FIJ = { remove_state_core = 636 }
-			FER = { remove_state_core = 655 remove_state_core = 408 remove_state_core = 409 }
+			FIJ = { remove_state_core = 643 remove_state_core = 639 remove_state_core = 636 }
+			FER = { remove_state_core = 657 remove_state_core = 655 remove_state_core = 408 remove_state_core = 409 }
 			VLA = { remove_state_core = 408 remove_state_core = 409 }
 			PHI = { remove_state_core = 623 remove_state_core = 624 remove_state_core = 628 remove_state_core = 627 remove_state_core = 626 remove_state_core = 625 }
-			UZB = { remove_state_core = 405 }
+			UZB = { remove_state_core = 585 remove_state_core = 405 }
 			EQG = { remove_state_core = 297 }
 			BLZ = { remove_state_core = 311 }
 			VIN = { remove_state_core = 671 remove_state_core = 286 }
@@ -62,26 +72,27 @@ on_actions = {
 			NGA = { remove_state_core = 558 }
 			MRT = { remove_state_core = 786 remove_state_core = 557 }
 			BYA = { remove_state_core = 564 }
+			YAK = { remove_state_core = 644 remove_state_core = 574 }
 			KHA = { remove_state_core = 569 }
 			LEB = { remove_state_core = 553 }
 			MLI = { remove_state_core = 782 remove_state_core = 556 }
 			SYR = { remove_state_core = 554 }
-			SUD = { remove_state_core = 767 remove_state_core = 549 }
+			SUD = { remove_state_core = 551 remove_state_core = 767 remove_state_core = 549 }
 			PNG = { remove_state_core = 523 remove_state_core = 737 }
 			ALG = { remove_state_core = 460 remove_state_core = 459 remove_state_core = 513 remove_state_core = 514 }
 			KOR = { remove_state_core = 525 remove_state_core = 527 }
 			NGR = { remove_state_core = 515 }
 			BHU = { remove_state_core = 324 }
 			OMA = { remove_state_core = 294 }
-			SAU = { remove_state_core = 292 }
-			YEM = { remove_state_core = 293 }
-			BRM = { remove_state_core = 288 }
+			SAU = { remove_state_core = 858 remove_state_core = 856 remove_state_core = 859 remove_state_core = 854 remove_state_core = 855 remove_state_core = 292 }
+			YEM = { remove_state_core = 659 remove_state_core = 293 }
+			BRM = { remove_state_core = 640 remove_state_core = 288 }
 			SEN = { remove_state_core = 272 }
 			GHA = { remove_state_core = 274 }
 			BRI = { remove_state_core = 14 }
 			LUX = { remove_state_core = 8 }
-			EGY = { remove_state_core = 457 remove_state_core = 456 remove_state_core = 453 remove_state_core = 447 remove_state_core = 446 }
-			PRC = { remove_state_core = 611 remove_state_core = 610 remove_state_core = 620 remove_state_core = 717 remove_state_core = 716 remove_state_core = 715 remove_state_core = 714 remove_state_core = 326 remove_state_core = 748 }
+			EGY = { remove_state_core = 552 remove_state_core = 457 remove_state_core = 456 remove_state_core = 453 remove_state_core = 447 remove_state_core = 446 }
+			PRC = { remove_state_core = 600 remove_state_core = 611 remove_state_core = 610 remove_state_core = 620 remove_state_core = 717 remove_state_core = 716 remove_state_core = 715 remove_state_core = 714 remove_state_core = 326 remove_state_core = 748 }
 			SIL = { remove_state_core = 762 remove_state_core = 67 remove_state_core = 66 }
 			KSH = { remove_state_core = 85 remove_state_core = 63 }
 			ALB = { remove_state_core = 44 }
@@ -104,7 +115,7 @@ on_actions = {
 			LBA = { remove_state_core = 451 remove_state_core = 450 remove_state_core = 449 remove_state_core = 448 remove_state_core = 273 }
 			AFA = { remove_state_core = 268 }
 			DJI = { remove_state_core = 268 }
-			SOM = { remove_state_core = 269 remove_state_core = 268 }
+			SOM = { remove_state_core = 559 remove_state_core = 269 remove_state_core = 268 }
 			MLD = { remove_state_core = 281 }
 			CYP = { remove_state_core = 183 }
 			UKR = { remove_state_core = 89 remove_state_core = 93 remove_state_core = 80 remove_state_core = 259 remove_state_core = 193 remove_state_core = 201 remove_state_core = 200 remove_state_core = 199 remove_state_core = 198 remove_state_core = 197 remove_state_core = 196 remove_state_core = 227 remove_state_core = 226 remove_state_core = 225 remove_state_core = 221 remove_state_core = 192 remove_state_core = 203 remove_state_core = 202 remove_state_core = 228 }
@@ -113,11 +124,11 @@ on_actions = {
 			ARM = { remove_state_core = 230 }
 			GEO = { remove_state_core = 231 }
 			CRI = { remove_state_core = 196 remove_state_core = 137 }
-			IRQ = { remove_state_core = 676 remove_state_core = 291 }
+			IRQ = { remove_state_core = 675 remove_state_core = 676 remove_state_core = 291 }
 			KAR = { remove_state_core = 215 remove_state_core = 216 remove_state_core = 147 }
-			KAZ = { remove_state_core = 404 remove_state_core = 402 remove_state_core = 407 remove_state_core = 406 remove_state_core = 583 }
+			KAZ = { remove_state_core = 588 remove_state_core = 589 remove_state_core = 590 remove_state_core = 587 remove_state_core = 586 remove_state_core = 404 remove_state_core = 402 remove_state_core = 407 remove_state_core = 406 remove_state_core = 583 }
 			OCC = { remove_state_core = 19 remove_state_core = 31 remove_state_core = 32 remove_state_core = 20 remove_state_core = 22 remove_state_core = 25 remove_state_core = 26 }
-			KOM = { remove_state_core = 262 remove_state_core = 397 }
+			KOM = { remove_state_core = 581 remove_state_core = 262 remove_state_core = 397 }
 			KAL = { remove_state_core = 237 }
 			SMI = { remove_state_core = 722 remove_state_core = 213 }
 			TAT = { remove_state_core = 249 }
