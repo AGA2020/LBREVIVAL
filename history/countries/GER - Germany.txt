@@ -184,20 +184,7 @@ set_war_support = 0.3
 		war_economy
 		extensive_conscription
 	}
-	
-	
-	
-	set_autonomy = {
-		target = SLO
-		autonomous_state = autonomy_puppet
-	}
-	
-	give_military_access = SLO
-	create_wargoal = {
-		type = take_state_focus
-		target = POL
-		generator = { 72 88 90 87 86 } # Zaolzie Krakow Kielce Lodz Poznan
-	}
+
 
 #Trade
 	create_import = {
@@ -239,6 +226,7 @@ set_war_support = 0.3
 	complete_national_focus = GER_kdf_wagen
 	complete_national_focus = GER_coal_liquidization
 	complete_national_focus = GER_extra_tech_slot
+	complete_national_focus = GER_anti_comitern_pact
 
 	#BUILDINGS
 	
