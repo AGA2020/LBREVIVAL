@@ -364,7 +364,4 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10782;5075;impassable;-1;-1;-1;-1;-1;;GDU Iran
 10782;12761;impassable;-1;-1;-1;-1;-1;;GDU Iran
 10782;5043;impassable;-1;-1;-1;-1;-1;;Iran
-13233;1048;impassable;-1;-1;-1;-1;-1;;gibraltar
-13233;10094;impassable;-1;-1;-1;-1;-1;;gibraltar
-13233;7153;impassable;-1;-1;-1;-1;-1;;gibraltar
 -1;-1;;-1;-1;-1;-1;-1;-1
