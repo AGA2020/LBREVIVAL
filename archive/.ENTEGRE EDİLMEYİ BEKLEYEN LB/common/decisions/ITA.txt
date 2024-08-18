@@ -1,4 +1,0 @@
-ITA_diplomacy = {
-}
-operations  = {
-}
