@@ -1,0 +1,17 @@
+
+leader_traits = {
+
+	Militarist = {
+		random = no
+		war_support_factor = 0.15
+	}
+	Expansionist = {
+	    random = no
+	    offensive_war_stability_factor = 0.10
+	}
+	Facilitator_of_Repression = {
+	    random = no
+	    industrial_capacity_factory = 0.05
+	}
+
+}
