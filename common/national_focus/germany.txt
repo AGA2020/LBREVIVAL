@@ -3080,6 +3080,9 @@ focus_tree = {
 				has_government = communism
 			}
 		}
+		allow_branch = {
+			is_historical_focus_on = no
+		}
 		x = 0
 		y = 3
 		relative_position_id = GER_anti_comitern_pact
@@ -3165,9 +3168,6 @@ focus_tree = {
 			}		
 			
 		}
-		bypass = {
-			has_war_with = SOV
-		}
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -3194,25 +3194,9 @@ focus_tree = {
 			}
 		}	
 		completion_reward = {
-			IF = {
-				limit = { SOV = { has_civil_war = no } }
-				create_wargoal = {
-					type = annex_everything
-					target = SOV
-					expire = 0
-				}
-			}
-			ELSE = {
-				every_country = {
-					limit = { original_tag = SOV }
-					GER = {
-						create_wargoal = {
-							type = annex_everything
-							target = PREV
-							expire = 0
-						}
-					}
-				}
+			declare_war_on = {
+			    target = SOV
+			    type = annex_everything
 			}
 		}
 	}
@@ -3416,10 +3400,6 @@ focus_tree = {
 		select_effect = { ENG = { give_guarantee = POL } }
 		completion_reward = {
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
-			declare_war_on = {
-			    target = POL
-			    type = annex_everything
-			}
 			hidden_effect = {
 				news_event = { hours = 1 id = news.204 }
 			}
