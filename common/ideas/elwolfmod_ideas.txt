@@ -1,0 +1,78 @@
+ideas = {
+	country = {
+		no_tradebacks = {
+			cancel = {
+				GER = {
+					has_war = yes
+				}
+			}
+			allowed = {
+				always = no				# Added via focus
+			}
+			removal_cost = -1
+			picture = generic_central_management
+			modifier = {
+				production_lack_of_resource_penalty_factor = -1
+			}
+		}
+		peace_training = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				OR = {
+					has_war = yes
+					AND = {
+						tag = SPR
+						OR = {								
+									GER = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									HUN = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									ITA = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									FIN = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									ROM = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+									BUL = { 
+										has_volunteers_amount_from = {
+											tag = ROOT
+										} 
+									}
+								}
+					}
+				}
+			}
+			removal_cost = -1
+			picture = generic_infantry_bonus
+			modifier = {
+				experience_gain_army = 0.25
+				training_time_army_factor = -0.89
+				air_training_xp_gain_factor = 10
+				experience_gain_navy_unit_factor = 10
+				air_accidents_factor = -2
+				naval_accidents_chance = -2
+				mobilization_speed = 2
+				army_fuel_consumption_factor = -0.9
+				air_fuel_consumption_factor = -0.9
+				navy_fuel_consumption_factor = -0.99
+			}
+		}
+	}
+}

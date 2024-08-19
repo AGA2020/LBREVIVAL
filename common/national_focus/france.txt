@@ -1482,6 +1482,7 @@
 		available_if_capitulated = yes
 
 		available = {
+			always = no 
 			NOT = { has_idea = FRA_disjointed_government }
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }

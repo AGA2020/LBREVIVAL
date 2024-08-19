@@ -1,0 +1,36 @@
+on_actions = {
+	on_monthly = {
+		effect = {
+			every_country = {
+				if = {
+					limit = {
+						NOT = {
+							OR = {
+								OR = {
+									has_war = yes
+									has_idea = peace_training
+								}
+							}
+						}
+					}
+				add_ideas = peace_training
+				}
+			}
+			
+			SWE = {
+				country_event = {
+					id = elwolfmod.1
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			every_country = {
+				set_country_flag = BOSPHORUS_STRAIT_BLOCKED_FOR_COUNTRY
+				add_ideas = { peace_training no_tradebacks }
+			}
+		}
+	}
+}
+
