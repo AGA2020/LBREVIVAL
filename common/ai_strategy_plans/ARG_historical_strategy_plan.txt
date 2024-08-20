@@ -39,17 +39,17 @@ ARG_historical_plan = {
 		#1937
 		ARG_crack_down_on_corruption
 		ARG_industrial_expansion
-		ARG_british_cooperation
+		ARG_cut_ties_with_britain
 		ARG_rapid_urbanization
-		ARG_import_substitution
+		ARG_support_radical_nationalism
 		ARG_agricultural_improvements
 
 		#1938
 		ARG_military_production_lines
-		ARG_emphasis_on_public_works
+		ARG_corporatism
 		ARG_economic_reactivation_act
-		ARG_towards_a_greater_argentina
-		ARG_universidad_de_buenos_aires
+		ARG_reestablish_ligas_patrioticas
+		ARG_fascist_researchers
 		SMB_air_force
 
 		#1939
@@ -63,6 +63,11 @@ ARG_historical_plan = {
 		#1940
 		ARG_economic_tax_reforms
 		ARG_invest_in_the_roads
+		ARG_encourage_italian_argentine_diplomacy
+		ARG_union_nacional_fascista
+		ARG_argentine_nationalism
+		ARG_war_division
+		ARG_join_the_axis
 		ARG_invest_in_the_railways
 		ARG_expand_steel_extraction
 		SMB_regular_infantry
