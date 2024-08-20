@@ -3438,37 +3438,7 @@ focus_tree = {
 		}
 		
 		available = {
-			hidden_trigger = {
-				OR = {
-					AND = {
-						is_ai = yes
-						NOT = { has_country_flag = SWE_GER_avoid_dow_nordics }
-					}
-
-					is_ai = no
-				}
-			}
-
-			10 = {
-				controller = {
-					OR = {
-						is_in_faction_with = ROOT
-						original_tag = GER
-					}
-				}
-			}
-			85 = {
-				controller = {
-					OR = {
-						is_in_faction_with = ROOT
-						original_tag = GER
-					}
-				}
-			}
-			OR = { 
-				has_war_with = ENG
-				NOT = {country_exists = ENG}
-			}
+			date > 1939.9.1
 		}
 		
 		x = 1
@@ -4259,7 +4229,7 @@ focus_tree = {
 			}
 		}
 		available = {
-			date > 1941.1.1
+			date > 1940.1.1
 		}
 		ai_will_do = {
 			factor = 10			
