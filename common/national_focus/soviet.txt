@@ -13282,35 +13282,37 @@ ai_will_do = {
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			is_subject = no
 		}
-
-		bypass = {
-			all_state = {
-				OR = {
-					is_core_of = EST
-					is_core_of = LAT
-					is_core_of = LIT
-				}
-				NOT = { state = 188 }
-				is_controlled_by = ROOT
-			}
-		}
 		
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		completion_reward = {
+			custom_effect_tooltip = sov_population_fleeing_tt
 			add_state_core = 813
+			813 = {add_manpower = -45000}
 			add_state_core = 812
+			812 = {add_manpower = -82500}
 			add_state_core = 811
+			811 = {add_manpower = -9723}
 			add_state_core = 12
+			12 = {add_manpower = -122697}
 			add_state_core = 191
+			191 = {add_manpower = -67833}
 			add_state_core = 808
+			808 = {add_manpower = -126228}
 			add_state_core = 190
+			190 = {add_manpower = -94764}
 			add_state_core = 11
+			11 = {add_manpower = -291636}
 			add_state_core = 815
+			815 = {add_manpower = -48490}
 			add_state_core = 189
+			189 = {add_manpower = -209390}
 			add_state_core = 809
+			809 = {add_manpower = -64730}
 			add_state_core = 13
+			13 = {add_manpower = -127070}
 			add_state_core = 810
+			810 = {add_manpower = -180290}
 			add_named_threat = { threat = 1 name = SOV_claims_in_baltic }
 		}
 	}
@@ -13337,41 +13339,17 @@ ai_will_do = {
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
 			is_subject = no
 		}
-
-		bypass = {
-			OR = {
-				has_full_control_of_state = 146
-				is_in_faction_with = FIN
-				has_country_flag = FIN_finno_soviet_pact_flag
-			}
-		}
 		
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		completion_reward = {
-			add_state_claim = 146 # Karjala
-
-			if= {
-				limit = {
-					146 = {
-						controller = {
-							NOT = { has_war_with = ROOT }
-						}
-					}
-				}
-				146 = {
-					controller = {
-						set_country_flag = SOV_ultimatum_sent_flag #Add it for AI strats reasons
-						add_timed_idea = {
-							idea = communist_pressure
-							days = 365
-						}
-						country_event = { id = finland.1 hours = 16 random_hours = 8 }
-					}
-				}
-				custom_effect_tooltip = if_they_accept_tt
-				event_option_tooltip = soviet.12.a
-			}
+			custom_effect_tooltip = sov_population_fleeing_fin_tt
+			add_state_core = 146
+			146 = {add_manpower = -300000}
+			add_state_core = 147
+			147 = {add_manpower = -3000}
+			add_state_core = 722
+			722 = {add_manpower = -1500}
 		}
 	}
 
