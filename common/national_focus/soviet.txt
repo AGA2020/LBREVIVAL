@@ -11353,6 +11353,13 @@ focus_tree = {
 		x = 24
 		y = 1
 		offset = {
+			x = -27
+			y = 0
+			trigger = { #Basic offset to compensate for missing Bukharinist branch
+				is_historical_focus_on = yes
+			}
+		}
+		offset = {
 			x = -7
 			y = 0
 			trigger = { #Basic offset to compensate for missing Bukharinist branch
@@ -13176,15 +13183,6 @@ ai_will_do = {
 				has_civil_war = yes
 			}	
 		}
-		
-		bypass = {
-			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
-			NOT = {
-				country_exists = EST
-				country_exists = LAT
-				country_exists = LIT
-			}
-		}
 
 		available = {
 			OR = {
@@ -13196,70 +13194,19 @@ ai_will_do = {
 		search_filters = {}
 
 		completion_reward = {
-			if = {
-				limit = {
-					country_exists = EST
-				}
-				EST = {
-					if = {
-						limit = { ROOT = { has_government = fascism } }
-						add_timed_idea = { idea = fascist_influence days = 1095 }
-					}
-					if = {
-						limit = { ROOT = { has_government = democratic } }
-						add_timed_idea = { idea = democratic_influence days = 1095 }
-					}
-					if = {
-						limit = { ROOT = { has_government = communism } }
-						add_timed_idea = { idea = communist_influence days = 1095 }
-					}
-					hidden_effect = {
-						country_event = { id = generic.1 }
-					}
+			LIT = {
+				every_unit_leader = {
+					set_nationality = SOV
 				}
 			}
-			if = {
-				limit = {
-					country_exists = LAT
-				}
-				LAT = {
-					if = {
-						limit = { ROOT = { has_government = fascism } }
-						add_timed_idea = { idea = fascist_influence days = 1095 }
-					}
-					if = {
-						limit = { ROOT = { has_government = democratic } }
-						add_timed_idea = { idea = democratic_influence days = 1095 }
-					}
-					if = {
-						limit = { ROOT = { has_government = communism } }
-						add_timed_idea = { idea = communist_influence days = 1095 }
-					}
-					hidden_effect = {
-						country_event = { id = generic.1 }
-					}
+			LAT = {
+				every_unit_leader = {
+					set_nationality = SOV
 				}
 			}
-			if = {
-				limit = {
-					country_exists = LIT
-				}
-				LIT = {
-					if = {
-						limit = { ROOT = { has_government = fascism } }
-						add_timed_idea = { idea = fascist_influence days = 1095 }
-					}
-					if = {
-						limit = { ROOT = { has_government = democratic } }
-						add_timed_idea = { idea = democratic_influence days = 1095 }
-					}
-					if = {
-						limit = { ROOT = { has_government = communism } }
-						add_timed_idea = { idea = communist_influence days = 1095 }
-					}
-					hidden_effect = {
-						country_event = { id = generic.1 }
-					}
+			EST = {
+				every_unit_leader = {
+					set_nationality = SOV
 				}
 			}
 		}
@@ -13351,47 +13298,19 @@ ai_will_do = {
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		completion_reward = {
-			# Estonia
-			custom_effect_tooltip = SOV_estonian_claimed_states_tt
-			hidden_effect = {
-				EST = {
-					every_owned_state = {
-						limit = {
-							is_core_of = PREV
-						}
-						ROOT = { add_state_claim = PREV }
-					}
-				}
-			}
-			# Latvia
-			custom_effect_tooltip = SOV_latvian_claimed_states_tt
-			hidden_effect = {
-				LAT = {
-					every_owned_state = {
-						limit = {
-							is_core_of = PREV
-						}
-						ROOT = { add_state_claim = PREV }
-					}
-				}
-			}
-			# Lithuania
-			custom_effect_tooltip = SOV_lithuanian_claimed_states_tt
-			hidden_effect = {
-				LIT = {
-					every_owned_state = {
-						limit = {
-							is_core_of = PREV
-						}
-						ROOT = { add_state_claim = PREV }
-					}
-				}
-			}
-			#Activate targeted decisions
-			activate_targeted_decision = { target = EST decision = SOV_send_ultimatum_to_country_baltic }
-			activate_targeted_decision = { target = LAT decision = SOV_send_ultimatum_to_country_baltic }
-			activate_targeted_decision = { target = LIT decision = SOV_send_ultimatum_to_country_baltic }
-
+			add_state_core = 813
+			add_state_core = 812
+			add_state_core = 811
+			add_state_core = 12
+			add_state_core = 191
+			add_state_core = 808
+			add_state_core = 190
+			add_state_core = 11
+			add_state_core = 815
+			add_state_core = 189
+			add_state_core = 809
+			add_state_core = 13
+			add_state_core = 810
 			add_named_threat = { threat = 1 name = SOV_claims_in_baltic }
 		}
 	}
@@ -13594,58 +13513,16 @@ ai_will_do = {
 			is_subject = no
 		}
 
-		bypass = {
-			OR = {
-				has_idea = SOV_molotov_ribbentrop_pact
-
-				NOT = { country_exists = POL }
-
-				has_non_aggression_pact_with = POL
-				has_guaranteed = POL
-
-				AND = {
-					OR = { 
-						owns_state = 91
-						91 = { is_claimed_by = ROOT }
-					}
-					OR = { 
-						owns_state = 93
-						93 = { is_claimed_by = ROOT }
-					}
-					OR = { 
-						owns_state = 94
-						94 = { is_claimed_by = ROOT }
-					}
-					OR = { 
-						owns_state = 95
-						95 = { is_claimed_by = ROOT }
-					}
-					OR = { 
-						owns_state = 96
-						96 = { is_claimed_by = ROOT }
-					}
-					OR = { 
-						owns_state = 89
-						89 = { is_claimed_by = ROOT }
-					}
-					OR = { 
-						owns_state = 784
-						784 = { is_claimed_by = ROOT }
-					}
-				}
-			}			
-		}
-
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			# REVISIT Covers Polish border, may want to add/remove some states
-			add_state_claim = 96
-			add_state_claim = 95
-			add_state_claim = 94
-			add_state_claim = 93
-			add_state_claim = 91
-			add_state_claim = 89
-			add_state_claim = 784
+			add_state_core = 96
+			add_state_core = 95
+			add_state_core = 94
+			add_state_core = 93
+			add_state_core = 91
+			add_state_core = 89
+			add_state_core = 784
 			add_named_threat = { threat = 3 name = SOV_claims_on_poland }
 
 			every_other_country = {
@@ -13905,99 +13782,13 @@ ai_will_do = {
 				controls_state = 78
 			}
 		}
-
-		bypass = {
-			OR = {
-				AND = {
-					OR = {
-						owns_state = 78 #Bessarabia
-						78 = {
-							owner = { is_in_faction_with = ROOT }
-						}
-					}
-					OR = {
-						owns_state = 80 #Bucovina
-						80 = {
-							owner = { is_in_faction_with = ROOT }
-						}
-					}
-					OR = {
-						owns_state = 766 #Southern Bessarabia
-						766 = {
-							owner = { is_in_faction_with = ROOT }
-						}
-					}
-				}
-				any_country = {
-					owns_state = 78
-					owns_state = 80
-					owns_state = 766
-					has_war_with = ROOT
-				}
-			}
-		}
-
-		will_lead_to_war_with = ROM
 		
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = { #This is now generic and will target any potential (multiple) controllers for these states.
-			if = {
-				limit = { 78 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
-				add_state_claim = 78
-			}
-			if = {
-				limit = { 766 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
-				add_state_claim = 766
-			}
-			if = {
-				limit = { 80 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
-				add_state_claim = 80
-			}
+			add_state_core = 78
+			add_state_core = 766
+			add_state_core = 80
 			add_named_threat = { threat = 1 name = SOV_claim_on_bessarabia }
-			random_other_country = {
-				limit = { owns_state = 78 }
-				add_opinion_modifier = { target = SOV modifier = claimed_bessarabia }
-				set_country_flag = SOV_added_claimed_bessarabia
-				country_event = { id = romania.1 hours = 16 random_hours = 8 }
-			}
-			if = { #Done like this to prevent disgusting tooltip issues, but I hate it ok?
-				limit = {
-					any_other_country = {
-						owns_state = 78
-						NOT = {	owns_state = 80 }
-					}
-				}
-				random_other_country = {
-					limit = { 
-						owns_state = 80 
-						NOT = { has_country_flag = SOV_added_claimed_bessarabia }
-					}
-					add_opinion_modifier = { target = SOV modifier = claimed_bucovina }
-					country_event = { id = romania.1 hours = 16 random_hours = 8 }
-				}
-			}
-			if = {
-				limit = {
-					AND = {
-						any_other_country = {
-							owns_state = 78
-							NOT = {	owns_state = 766 }
-						}
-						any_other_country = {
-							owns_state = 80
-							NOT = {	owns_state = 766 }
-						}
-					}
-				}
-				random_other_country = {
-					limit = { 
-						owns_state = 766
-						NOT = { has_country_flag = SOV_added_claimed_bessarabia }
-					}
-					add_opinion_modifier = { target = SOV modifier = claimed_bucovina }
-					country_event = { id = romania.1 hours = 16 random_hours = 8 }
-				}
-			}
 		}
 	}
 
