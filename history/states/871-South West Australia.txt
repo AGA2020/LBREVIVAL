@@ -9,7 +9,7 @@ state={
 			infrastructure = 1
 		}
 		owner = RAJ
-		add_core_of = AST
+		add_core_of = RAJ
 	}
 	state_category = pastoral
 	manpower=50000
