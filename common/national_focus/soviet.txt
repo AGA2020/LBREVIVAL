@@ -13493,30 +13493,22 @@ ai_will_do = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			# REVISIT Covers Polish border, may want to add/remove some states
+			custom_effect_tooltip = sov_population_fleeing_pol_tt
 			add_state_core = 96
+			96 = {add_manpower = -218064}
 			add_state_core = 95
+			95 = {add_manpower = -480000}
 			add_state_core = 94
+			94 = {add_manpower = -369000}
 			add_state_core = 93
+			93 = {add_manpower = -594000}
 			add_state_core = 91
+			91 = {add_manpower = -969000}
 			add_state_core = 89
+			89 = {add_manpower = -654000}
 			add_state_core = 784
+			784 = {add_manpower = -171513}
 			add_named_threat = { threat = 3 name = SOV_claims_on_poland }
-
-			every_other_country = {
-				limit = { 
-					OR = {
-						owns_state = 96
-						owns_state = 95
-						owns_state = 94
-						owns_state = 93
-						owns_state = 91
-						owns_state = 89
-						owns_state = 784
-					}
-				}
-				add_opinion_modifier = { target = SOV modifier = claimed_eastern_poland }
-			}
 		}
 	}
 
