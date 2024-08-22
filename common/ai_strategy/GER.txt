@@ -1770,7 +1770,7 @@ GER_wants_civ = {
 	ai_strategy = {
 		type = building_target
 		id = industrial_complex
-		value = 100
+		value = 150
 	}
 }
 GER_wants_synth = {
