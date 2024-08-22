@@ -1773,6 +1773,20 @@ GER_wants_civ = {
 		value = 150
 	}
 }
+GER_dont_build_dockyards_please_thanks_aga = {
+	allowed = {
+		original_tag = GER
+	}
+	enable = {
+		has_government = fascism
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = 10
+	}
+}
 GER_wants_synth = {
 	allowed = {
 		original_tag = GER
