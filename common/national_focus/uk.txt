@@ -635,7 +635,16 @@ focus_tree = {
 				name = industrial_bonus
 				bonus = 1.0
 				uses = 2
-				category = industry
+				technology = construction3
+				technology = construction4
+				technology = concentrated_industry3
+				technology = concentrated_industry4
+				technology = dispersed_industry3
+				technology = dispersed_industry4
+				technology = advanced_machine_tools
+				technology = assembly_line_production
+				technology = fuel_refining3
+				technology = fuel_refining4
 			}
 		}
 	}

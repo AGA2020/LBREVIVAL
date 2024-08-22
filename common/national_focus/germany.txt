@@ -29,6 +29,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+		available = { has_completed_focus = GER_rhineland }
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_tech_bonus = {
@@ -2072,7 +2073,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		available = { has_completed_focus = GER_rhineland }
 		available_if_capitulated = yes
 		complete_tooltip = {
 			air_experience = 25
@@ -2365,7 +2366,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		available = { has_completed_focus = GER_rhineland }
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -4379,7 +4380,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		x = 35
 		y = 1
-
+		available = { has_completed_focus = GER_rhineland }
 		offset = {
 			x = -8
 			y = 0
