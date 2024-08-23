@@ -6775,17 +6775,6 @@ focus_tree = {
 		icon = GFX_focus_SOV_the_path_of_marxism_leninism
 		x = 16
 		y = 0
-		offset = {
-			x = -8
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = SOV_beaten_but_not_defeated
-			}
-		}
 		relative_position_id = SOV_strengthen_the_mobilization_plan
 		cost = 5
 
@@ -6832,18 +6821,6 @@ focus_tree = {
 		prerequisite = { focus = SOV_the_path_of_marxism_leninism }
 		x = -8
 		y = 1
-		offset = {
-			x = 8
-			y = 1
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = SOV_beaten_but_not_defeated
-				NOT = { has_completed_focus = SOV_the_hands_do }
-			}
-		}
 		relative_position_id = SOV_the_path_of_marxism_leninism
 		cost = 5
 
@@ -11384,18 +11361,6 @@ focus_tree = {
 			trigger = { # Stalinist branch hides
 				NOT = { has_dlc = "No Step Back" }
 				has_completed_focus = SOV_the_left_opposition
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-			}
-		}
-		offset = {
-			x = -26
-			y = 0
-			trigger = {
-				has_dlc = "No Step Back"
-				has_completed_focus = SOV_the_centre
 				has_game_rule = {
 					rule = obsolete_focus_branches_visibility
 					option = HIDE
