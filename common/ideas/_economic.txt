@@ -98,7 +98,7 @@ ideas = {
 
 		civilian_economy = {
 
-
+			level = 5
 			cost = 150
 			removal_cost = -1
 
@@ -118,7 +118,7 @@ ideas = {
 		}
 
 		low_economic_mobilisation = {
-
+		level = 4
 			available = {
 				has_war_support > 0.15
 				if = {
@@ -209,7 +209,7 @@ ideas = {
 		}
 
 		partial_economic_mobilisation = {
-
+		level = 3
 			available = {
 				has_war_support > 0.25
 
@@ -303,7 +303,7 @@ ideas = {
 		}
 
 		war_economy = {
-
+		level = 2
 
 			available = {
 				has_war_support > 0.5
@@ -416,7 +416,7 @@ ideas = {
 		}
 
 		tot_economic_mobilisation = {
-
+		level = 1
 
 			available = {
 				has_war = yes
