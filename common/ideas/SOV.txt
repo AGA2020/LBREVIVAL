@@ -5626,6 +5626,10 @@ ideas = {
 
 			modifier = {
 			}
+
+			ai_will_do = { #EAI
+				factor = 0
+			}
 		}
 
 		SOV_kirov_1 = {
@@ -5889,6 +5893,12 @@ ideas = {
 			traits = { battlefleet_designer }
 
 			modifier = {
+			}
+
+			ai_will_do = { #EAI
+				base = 0.01
+
+				modifier = { factor = 0 has_political_power < 200 }
 			}
 		}
 
@@ -6330,6 +6340,12 @@ ideas = {
 
 			modifier = {
 			}
+
+			ai_will_do = { #EAI
+				base = 0.01
+
+				modifier = { factor = 0 has_political_power < 200 }
+			}
 		}
 
 		SOV_rubin_design_bureau_1 = {
@@ -6758,6 +6774,12 @@ ideas = {
 			traits = { black_sea_naval_manufacturer }
 
 			modifier = {
+			}
+
+			ai_will_do = { #EAI
+				base = 0.01
+
+				modifier = { factor = 0 has_political_power < 200 }
 			}
 		}
 
@@ -7188,6 +7210,12 @@ ideas = {
 				repair_speed_factor = 0.1
 				refit_ic_cost = -0.1
 				refit_speed = 0.1
+			}
+
+			ai_will_do = { #EAI
+				base = 0.01
+
+				modifier = { factor = 0 has_political_power < 200 }
 			}
 		}
 
@@ -7666,6 +7694,11 @@ ideas = {
 
 			modifier = {
 			}
+
+			ai_will_do = { #EAI
+				factor = 1
+				modifier = { factor = 10000 OR = { date > 1938.6.1 is_researching_technology = fighter2 } }
+			}
 		}
 
 		SOV_mig_design_bureau_1 = {
@@ -7959,6 +7992,10 @@ ideas = {
 			traits = { medium_aircraft_manufacturer }
 
 			modifier = {
+			}
+
+			ai_will_do = { #EAI
+				factor = 0
 			}
 		}
 
@@ -8255,6 +8292,10 @@ ideas = {
 
 			modifier = {
 			}
+
+			ai_will_do = { #EAI
+				factor = 0
+			}
 		}
 
 		SOV_tupolev_design_bureau_1 = {
@@ -8548,6 +8589,10 @@ ideas = {
 			traits = { naval_aircraft_manufacturer }
 
 			modifier = {
+			}
+
+			ai_will_do = { #EAI
+				factor = 0
 			}
 		}
 
@@ -8845,6 +8890,10 @@ ideas = {
 
 			modifier = {
 			}
+
+			ai_will_do = { #EAI
+				factor = 0
+			}
 		}
 
 		SOV_grabin_design_bureau_1 = {
@@ -9103,6 +9152,12 @@ ideas = {
 
 			modifier = {
 			}
+
+			ai_will_do = { #EAI
+				base = 10
+
+				modifier = { factor = 0 has_political_power < 200 }
+			}
 		}
 
 		SOV_tula_arms_plant_1 = {
@@ -9360,6 +9415,10 @@ ideas = {
 			traits = { motorized_equipment_manufacturer }
 
 			modifier = {
+			}
+
+			ai_will_do = { #EAI
+				factor = 0
 			}
 		}
 
@@ -9623,6 +9682,10 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = SOV_industrial_concern_upgrade_tt
 			}
+
+			ai_will_do = { #EAI
+				factor = 0
+			}
 		}
 
 		stalingrad_tractor_factory_improved = { #NSB
@@ -9646,6 +9709,10 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.05
+			}
+
+			ai_will_do = { #EAI
+				factor = 0
 			}
 		}
 
@@ -9677,6 +9744,10 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = SOV_industrial_concern_upgrade_tt
+			}
+
+			ai_will_do = { #EAI
+				factor = 0
 			}
 		}
 
@@ -9741,6 +9812,10 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = SOV_industrial_concern_upgrade_tt
+			}
+
+			ai_will_do = { #EAI
+				factor = 0
 			}
 		}
 
@@ -9810,6 +9885,10 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.05
 				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = 0.05
+			}
+
+			ai_will_do = { #EAI
+				factor = 50000
 			}
 		}
 
