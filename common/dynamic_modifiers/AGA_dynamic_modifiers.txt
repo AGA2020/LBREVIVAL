@@ -3,6 +3,6 @@ Ger_fall_gelb = {
 
 	icon = GFX_MODIFIER_AIR_CAS_EFFICIENCY
 
-	army_attack_factor = 0.15
+	army_attack_factor = 0.1
 	army_defence_factor = 0.05
 }
