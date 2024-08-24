@@ -146,6 +146,12 @@ ideas = {
 				}
 				if = {
 					limit = {
+						original_tag = ENG
+					}
+					GER = { has_completed_focus = GER_rhineland }
+				}
+				if = {
+					limit = {
 						original_tag = TUR
 						has_dlc = "Battle for the Bosporus"
 					}
