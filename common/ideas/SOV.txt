@@ -4551,6 +4551,10 @@ ideas = {
 
 			modifier = {
 			}
+
+			ai_will_do = { #EAI
+				factor = 0
+			}
 		}
 
 		SOV_morozov_design_bureau_1 = {
@@ -4805,6 +4809,10 @@ ideas = {
 
 			modifier = {
 			}
+
+			ai_will_do = { #EAI
+				factor = 0
+			}
 		}
 
 		SOV_astrov_design_bureau_1 = {
@@ -5058,6 +5066,12 @@ ideas = {
 			traits = { infantry_tank_manufacturer }
 
 			modifier = {
+			}
+			
+			ai_will_do = { #EAI
+				base = 1
+
+				modifier = { factor = 0 has_political_power < 200 }
 			}
 		}
 
@@ -5314,6 +5328,10 @@ ideas = {
 				equipment_conversion_speed = 0.15
 				equipment_capture_factor = 0.15
 				land_equipment_upgrade_xp_cost = -0.1
+			}
+
+			ai_will_do = { #EAI
+				factor = 0
 			}
 		}
 

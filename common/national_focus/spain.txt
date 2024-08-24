@@ -126,10 +126,6 @@ focus_tree = {
 			    ideology = neutrality
 			    popularity = 0.05
 			}
-			set_politics = {
-				ruling_party = fascism
-				elections_allowed = no
-			}
 			hidden_effect = {
 				every_owned_state = {
 					limit = {
@@ -3684,6 +3680,10 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 			activate_mission = SPA_carlist_uprising_mission
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
 		}
 	}
 
