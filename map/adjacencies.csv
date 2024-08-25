@@ -3,12 +3,14 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7413;1419;sea;5294;-1;-1;-1;-1;;Moluccas
 10141;1419;sea;5267;-1;-1;-1;-1;;Moluccas
 480;9431;sea;8621;-1;-1;-1;-1;;Netherlands outlier
+9498;9431;sea;8621;-1;-1;-1;-1;;Netherlands inlier
 8857;2284;sea;7617;1560;1009;1556;1016;PANAMA_CANAL;Panama
 2729;2408;sea;6257;2949;1598;2962;1612;KIEL_CANAL;Kiel
 5388;803;sea;1155;-1;-1;-1;-1;SUEZ_CANAL;Suez
 299;211;sea;2282;-1;-1;-1;-1;;Småland-Öland
 6345;6287;sea;2382;-1;-1;-1;-1;;Skåne-Sjaelland
 3260;3325;sea;2408;-1;-1;-1;-1;;Sjaelland-Fyn
+3260;3374;sea;2408;-1;-1;2973;1625;;Sjaelland-SdFyn
 3374;13260;sea;2408;2971;1622;2973;1620;;SdFyn-Langeland
 13260;13261;sea;2408;2975;1619;2977;1618;;Langeland-Lolland
 13261;3305;sea;2408;2987;1617;2989;1619;;Lolland-Själland
@@ -134,10 +136,15 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 13270;11064;sea;3195;-1;-1;-1;-1;;Orkney-Thurso
 8435;6550;sea;7452;-1;-1;-1;-1;;Aegan Isle-Strait
 7304;4360;sea;8614;-1;-1;-1;-1;;New Foundland-Strait
+3917;788;sea;8492;-1;-1;-1;-1;;Chesapeake Bay Ferry
+9786;11740;sea;8492;-1;-1;-1;-1;;Cape May-Lewes Ferry
+859;6909;sea;8518;-1;-1;-1;-1;;Cross Sound Ferry
+10233;5205;sea;13155;-1;-1;-1;-1;;Makinac Bridge
 5407;5382;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar North
 5407;2400;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar South
 2455;2431;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
 5412;7678;;-1;-1;-1;-1;-1;BOSPHORUS_STRAIT;Bosphorus
+8791;7932;;-1;-1;-1;-1;-1;Shimonoseki_strait;Shimonoseki-kaikyō
 2919;2943;;-1;-1;-1;-1;-1;HORMUZ_STRAIT;hormuz
 10825;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
 10825;8029;impassable;-1;-1;-1;-1;-1;;Himalayas
@@ -217,9 +224,25 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 12954;13297;sea;5424;-1;-1;-1;-1;;Araucania
 13312;7982;sea;2919;-1;-1;-1;-1;;South Iran
 761;13315;sea;9092;-1;-1;-1;-1;;Ontario
+6979;11767;sea;5864;-1;-1;-1;-1;;Albania
 13196;13314;sea;9092;-1;-1;-1;-1;;Northern Quebec
 4135;10094;impassable;-1;-1;-1;-1;-1;;gibraltar
 4135;7153;impassable;-1;-1;-1;-1;-1;;gibraltar
 13228;1048;impassable;-1;-1;-1;-1;-1;;west gibraltar
 13228;10094;impassable;-1;-1;-1;-1;-1;;west gibraltar
+7661;7477;sea;1271;-1;-1;-1;-1;;BAKU
+10904;13312;sea;2919;-1;-1;-1;-1;;Persian Gulf ferries
+2291;2124;;-1;-1;-1;-1;-1;SAPE_STRAIT;
+6824;5946;;-1;-1;-1;-1;-1;TSUGARU_STRAIT;
+2800;2776;;-1;-1;-1;-1;-1;BAB-EL-MANDEB_STRAIT;
+3590;8340;;-1;-1;-1;-1;-1;MOYLE_STRAIT;
+8282;8308;;-1;-1;-1;-1;-1;KERCH_STRAIT;
+2824;13004;;-1;-1;-1;-1;-1;DOVER_STRAIT;English Coast
+5929;13004;;-1;-1;-1;-1;-1;DOVER_STRAIT;North Channel
+5929;8450;;-1;-1;-1;-1;-1;DOVER_STRAIT;Central Channel
+5929;11748;;-1;-1;-1;-1;-1;DOVER_STRAIT;South Channel
+8621;11748;;-1;-1;-1;-1;-1;DOVER_STRAIT;French Coast
+2714;2737;;-1;-1;-1;-1;-1;SUNDA_STRAIT;Sunda strait
+2440;2239;;-1;-1;-1;-1;-1;LOMBOK_STRAIT;Bali strait
+2265;2239;;-1;-1;-1;-1;-1;LOMBOK_STRAIT;Lombok & Alas strait
 -1;-1;;-1;-1;-1;-1;-1;-1 
