@@ -156,18 +156,7 @@ focus_tree = {
 			factor = 1
 		}
 		allow_branch = {
-			has_dlc = "Man the Guns"
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					has_completed_focus = USA_reestablish_the_gold_standard
-				}
-			}
+			is_historical_focus_on = no
 		}
 		available = {
 
