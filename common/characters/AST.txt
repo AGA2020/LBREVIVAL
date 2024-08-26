@@ -432,7 +432,7 @@ characters={
 			slot = air_chief
 			idea_token = AST_charles_burnett
 			allowed = {
-				original_tag = AST
+				original_tag = RAJ
 			}
 			traits = {
 				air_chief_reform_2

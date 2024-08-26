@@ -104,7 +104,6 @@ recruit_character = AST_norman_makin
 recruit_character = AST_james_fairbairn
 recruit_character = AST_vernon_sturdee
 recruit_character = AST_jack_crace
-recruit_character = AST_charles_burnett
 recruit_character = AST_john_lavarack
 recruit_character = AST_robert_g_menzies
 recruit_character = AST_ben_chifley
