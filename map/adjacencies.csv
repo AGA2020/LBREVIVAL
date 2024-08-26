@@ -249,4 +249,5 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 2440;2239;;-1;-1;-1;-1;-1;LOMBOK_STRAIT;Bali strait
 2265;2239;;-1;-1;-1;-1;-1;LOMBOK_STRAIT;Lombok & Alas strait
 4985;5074;sea;2776;-1;-1;-1;-1;;Aden
+10181;1098;sea;8822;-1;-1;-1;-1;;Kalimantan-Sulawesi
 -1;-1;;-1;-1;-1;-1;-1;-1 
