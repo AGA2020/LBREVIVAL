@@ -556,8 +556,7 @@ characters={
 			idea_token = AST_arthur_drakeford
 			ledger = air
 			allowed = {
-				original_tag = AST
-				has_dlc = "Together for Victory"
+				original_tag = RAJ
 			}
 			traits = {
 				air_air_combat_training_2
