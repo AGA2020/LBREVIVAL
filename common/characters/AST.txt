@@ -508,7 +508,7 @@ characters={
 			idea_token = AST_john_collins
 			ledger = navy
 			allowed = {
-				original_tag = AST
+				original_tag = RAJ
 			}
 			traits = {
 				navy_capital_ship_2

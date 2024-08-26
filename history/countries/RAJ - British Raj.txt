@@ -86,6 +86,7 @@ recruit_character = RAJ_kodandera_subayya_thimayya
 recruit_character = RAJ_jayanto_nath_chaudhuri
 recruit_character = AST_edmund_herring
 recruit_character = AST_arthur_allen
+recruit_character = AST_john_collins
 
 
 if = {
