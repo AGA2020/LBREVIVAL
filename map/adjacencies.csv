@@ -251,4 +251,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4985;5074;sea;2776;-1;-1;-1;-1;;Aden
 10181;1098;sea;8822;-1;-1;-1;-1;;Kalimantan-Sulawesi
 4493;7369;sea;5343;4731;638;-1;-1;;Sulawesi-moluccas
+10409;4468;sea;5320;-1;-1;-1;-1;;moluccas-west papua
+1310;1644;sea;5563;-1;-1;-1;-1;;papua-north queensland
 -1;-1;;-1;-1;-1;-1;-1;-1 
