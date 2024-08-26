@@ -79,16 +79,11 @@ recruit_character = RAJ_john_mathai
 
 set_variable = { RAJ_agrarian_society_increment = 0.05 }
 
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	recruit_character = RAJ_lakshmi_sahgal
-	recruit_character = RAJ_orde_wingate
-	recruit_character = RAJ_kodandera_madappa_cariappa
-	recruit_character = RAJ_kodandera_subayya_thimayya
-	recruit_character = RAJ_jayanto_nath_chaudhuri
-}
+recruit_character = RAJ_lakshmi_sahgal
+recruit_character = RAJ_orde_wingate
+recruit_character = RAJ_kodandera_madappa_cariappa
+recruit_character = RAJ_kodandera_subayya_thimayya
+recruit_character = RAJ_jayanto_nath_chaudhuri
 
 
 if = {
@@ -105,6 +100,16 @@ if = {
 		has_dlc = "Man the Guns"
 	}
 	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_submarine = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		basic_cruiser_armor_scheme = 1
 		mtg_transport = 1
 	}
 }
