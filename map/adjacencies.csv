@@ -254,4 +254,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10409;4468;sea;5320;-1;-1;-1;-1;;moluccas-west papua
 1310;1644;sea;5563;-1;-1;-1;-1;;papua-north queensland
 4421;10234;sea;7010;-1;-1;-1;-1;;bismarck-solomon island
+4226;12265;sea;229;-1;-1;-1;-1;;solomon islands-solomon islands
+1759;12645;sea;5240;-1;-1;-1;-1;;victoria-tasmania
 -1;-1;;-1;-1;-1;-1;-1;-1 
