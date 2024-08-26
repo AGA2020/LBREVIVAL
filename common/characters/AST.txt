@@ -483,7 +483,7 @@ characters={
 			idea_token = AST_clive_caldwell
 			ledger = air
 			allowed = {
-				original_tag = AST
+				original_tag = RAJ
 			}
 			traits = {
 				air_air_superiority_3
@@ -577,12 +577,11 @@ characters={
 			idea_token = AST_cederic_hicks
 			ledger = army
 			allowed = {
-				original_tag = AST
-				has_dlc = "Together for Victory"
+				original_tag = RAJ
 			}
 			cost = 150.000
 			available = {
-				has_completed_focus = AST_australian_army_catering_corps
+				has_completed_focus = RAJ_british_army_support
 			}
 			traits = {
 				army_logistics_2
