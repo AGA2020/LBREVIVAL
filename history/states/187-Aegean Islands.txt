@@ -29,6 +29,7 @@ state={
 			8435 1
 		}
 		add_core_of = GRE
+		add_extra_state_shared_building_slots = 1
 	}
 
 	provinces={
