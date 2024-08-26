@@ -94,6 +94,8 @@ recruit_character = AST_charles_burnett
 recruit_character = AST_richard_williams
 recruit_character = AST_vernon_sturdee
 recruit_character = AST_sydney_rowell
+recruit_character = AST_jack_beasley
+recruit_character = AST_alexander_hore_ruthven
 
 
 if = {

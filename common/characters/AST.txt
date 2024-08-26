@@ -607,7 +607,7 @@ characters={
 			slot = political_advisor
 			idea_token = AST_alexander_hore_ruthven
 			allowed = {
-				original_tag = AST
+				original_tag = RAJ
 			}
 			traits = {
 				quartermaster_general 
@@ -697,7 +697,7 @@ characters={
 			slot = political_advisor
 			idea_token = AST_jack_beasley
 			allowed = {
-				original_tag = AST
+				original_tag = RAJ
 				has_dlc = "Together for Victory"
 			}
 			traits = {
