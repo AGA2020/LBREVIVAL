@@ -92,6 +92,8 @@ recruit_character = AST_cederic_hicks
 recruit_character = AST_clive_caldwell
 recruit_character = AST_charles_burnett
 recruit_character = AST_richard_williams
+recruit_character = AST_vernon_sturdee
+recruit_character = AST_sydney_rowell
 
 
 if = {

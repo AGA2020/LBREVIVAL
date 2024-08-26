@@ -311,7 +311,7 @@ characters={
 			slot = army_chief
 			idea_token = AST_sydney_rowell
 			allowed = {
-				original_tag = AST
+				original_tag = RAJ
 			}
 			traits = {
 				army_chief_organizational_2
@@ -334,7 +334,7 @@ characters={
 			slot = army_chief
 			idea_token = AST_vernon_sturdee
 			allowed = {
-				original_tag = AST
+				original_tag = RAJ
 			}
 			traits = {
 				army_chief_offensive_1
