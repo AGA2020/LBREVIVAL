@@ -98,7 +98,6 @@ recruit_character = AST_john_northcott
 recruit_character = AST_harold_farncomb
 recruit_character = AST_victor_crutchley
 recruit_character = AST_sydney_rowell
-recruit_character = AST_richard_williams
 recruit_character = AST_ragnar_colvin
 recruit_character = AST_norman_makin
 recruit_character = AST_james_fairbairn

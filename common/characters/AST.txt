@@ -409,7 +409,7 @@ characters={
 			slot = air_chief
 			idea_token = AST_richard_williams
 			allowed = {
-				original_tag = AST
+				original_tag = RAJ
 			}
 			traits = {
 				air_chief_safety_3
