@@ -459,7 +459,7 @@ characters={
 			idea_token = AST_arthur_allen
 			ledger = army
 			allowed = {
-				original_tag = AST
+				original_tag = RAJ
 			}
 			traits = {
 				army_infantry_3

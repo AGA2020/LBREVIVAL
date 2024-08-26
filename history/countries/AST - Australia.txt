@@ -104,7 +104,6 @@ recruit_character = AST_ragnar_colvin
 recruit_character = AST_norman_makin
 recruit_character = AST_james_fairbairn
 recruit_character = AST_john_collins
-recruit_character = AST_arthur_allen
 recruit_character = AST_vernon_sturdee
 recruit_character = AST_jack_crace
 recruit_character = AST_cederic_hicks
