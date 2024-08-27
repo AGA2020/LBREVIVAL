@@ -57,18 +57,12 @@ recruit_character = CAN_george_pearkes
 recruit_character = CAN_john_murchie
 recruit_character = CAN_harold_edwards
 recruit_character = CAN_frederick_m_w_harvey
-recruit_character = CAN_harry_crerar
 recruit_character = CAN_robert_leckie
 recruit_character = CAN_kenneth_stuart
 recruit_character = CAN_andrew_mcnaughton
-recruit_character = CAN_george_jones
-recruit_character = CAN_raymond_collishaw
-recruit_character = CAN_guy_simonds
 recruit_character = CAN_james_stanley_scott
-recruit_character = CAN_alasdair_murray
 recruit_character = CAN_george_volkoff
 recruit_character = CAN_george_croil
-recruit_character = CAN_percy_nelles
 recruit_character = CAN_robert_manion
 recruit_character = CAN_ian_a_mackenzie
 recruit_character = CAN_c_d_howe
@@ -79,7 +73,6 @@ recruit_character = CAN_william_kashtan
 recruit_character = CAN_leo_richer_lafleche
 recruit_character = CAN_r_b_bennett
 recruit_character = CAN_louis_st_laurent
-recruit_character = CAN_lindsay_gordon
 
 IF = {
 	limit = {
@@ -300,7 +293,7 @@ set_popularities = {
 	communism = 1
 }
 
-set_convoys = 100
+set_convoys = 0
 set_stability = 0.75
 
 ### VARIANTS ###

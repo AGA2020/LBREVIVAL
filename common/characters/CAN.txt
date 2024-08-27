@@ -304,7 +304,7 @@ characters={
 			slot = army_chief
 			idea_token = CAN_harry_crerar
 			allowed = {
-				original_tag = CAN
+				original_tag = ENG
 			}
 			traits = {
 				army_chief_old_guard
@@ -375,7 +375,7 @@ characters={
 			slot = navy_chief
 			idea_token = CAN_percy_nelles
 			allowed = {
-				original_tag = CAN
+				original_tag = ENG
 			}
 			traits = {
 				navy_chief_decisive_battle_2
@@ -398,7 +398,7 @@ characters={
 			slot = navy_chief
 			idea_token = CAN_alasdair_murray
 			allowed = {
-				original_tag = CAN
+				original_tag = ENG
 			}
 			traits = {
 				navy_chief_commerce_raiding_2
@@ -421,7 +421,7 @@ characters={
 			slot = high_command
 			idea_token = CAN_george_jones
 			allowed = {
-				original_tag = CAN
+				original_tag = ENG
 				has_dlc = "Together for Victory"
 			}
 			traits = {
@@ -518,7 +518,7 @@ characters={
 			slot = air_chief
 			idea_token = CAN_raymond_collishaw
 			allowed = {
-				original_tag = CAN
+				original_tag = ENG
 				has_dlc = "Together for Victory"
 			}
 			traits = {
@@ -546,7 +546,7 @@ characters={
 			idea_token = CAN_guy_simonds
 			ledger = army
 			allowed = {
-				original_tag = CAN
+				original_tag = ENG
 			}
 			traits = {
 				army_artillery_2
@@ -594,7 +594,7 @@ characters={
 			idea_token = CAN_lindsay_gordon
 			ledger = air
 			allowed = {
-				original_tag = CAN
+				original_tag = ENG
 			}
 			traits = {
 				air_air_combat_training_2
