@@ -104,6 +104,7 @@ recruit_character = NZL_h_d_mcgregor
 recruit_character = NZL_trevor_handley
 recruit_character = NZL_w_a_veitch_milne
 recruit_character = NZL_walter_nash
+recruit_character = SAF_adolf_malan
 
 
 if = {
