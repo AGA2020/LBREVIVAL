@@ -102,6 +102,7 @@ recruit_character = NZL_norris_stephen_falla
 recruit_character = NZL_j_c_nichols
 recruit_character = NZL_h_d_mcgregor
 recruit_character = NZL_trevor_handley
+recruit_character = NZL_w_a_veitch_milne
 
 
 if = {

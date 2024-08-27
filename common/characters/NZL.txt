@@ -578,7 +578,7 @@ characters={
 			slot = political_advisor
 			idea_token = NZL_w_a_veitch_milne
 			allowed  = {
-				original_tag  = NZL
+				original_tag  = RAJ
 			}
 			traits  = {
 				prince_of_terror 
