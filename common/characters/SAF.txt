@@ -393,7 +393,7 @@ characters={
 			idea_token = SAF_c_de_weenburg_du_toit
 			ledger = army
 			allowed = {
-				original_tag = SAF
+				original_tag = RAJ
 			}
 			traits = {
 				army_armored_2
