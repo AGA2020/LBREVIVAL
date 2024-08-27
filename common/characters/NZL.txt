@@ -533,7 +533,7 @@ characters={
 			idea_token = NZL_trevor_handley
 			ledger = navy
 			allowed = {
-				original_tag = NZL
+				original_tag = RAJ
 			}
 			traits = {
 				navy_naval_air_defense_2

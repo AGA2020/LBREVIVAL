@@ -79,7 +79,6 @@ recruit_character = NZL_r_a_cochrane
 recruit_character = NZL_l_p_peterson
 recruit_character = NZL_n_weir
 recruit_character = NZL_edward_puttick
-recruit_character = NZL_trevor_handley
 recruit_character = NZL_keith_j_holyoake
 recruit_character = NZL_a_j_stallworthy
 recruit_character = NZL_eric_prendergast
