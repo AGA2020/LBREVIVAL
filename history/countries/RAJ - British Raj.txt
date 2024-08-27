@@ -99,6 +99,7 @@ recruit_character = AST_alexander_hore_ruthven
 recruit_character = NZL_j_e_duigan
 recruit_character = NZL_w_h_stratton
 recruit_character = NZL_norris_stephen_falla
+recruit_character = NZL_j_c_nichols
 
 
 if = {

@@ -77,7 +77,6 @@ recruit_character = NZL_edmund_rupert_drummond
 recruit_character = NZL_peter_phipps
 recruit_character = NZL_r_a_cochrane
 recruit_character = NZL_l_p_peterson
-recruit_character = NZL_j_c_nichols
 recruit_character = NZL_n_weir
 recruit_character = NZL_edward_puttick
 recruit_character = NZL_trevor_handley

@@ -485,7 +485,7 @@ characters={
 			idea_token = NZL_j_c_nichols
 			ledger = army
 			allowed = {
-				original_tag = NZL
+				original_tag = RAJ
 			}
 			traits = {
 				army_cavalry_2
