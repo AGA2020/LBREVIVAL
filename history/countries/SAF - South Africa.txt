@@ -108,7 +108,6 @@ recruit_character = SAF_marinus_van_osterkamp
 recruit_character = SAF_robert_palmer
 recruit_character = SAF_leonard_beyers
 recruit_character = SAF_james_mitchell_baker
-recruit_character = SAF_jeannot_de_la_tourier
 recruit_character = SAF_j_f_van_rensburg
 recruit_character = SAF_e_g_jansen
 recruit_character = SAF_nicolaas_havenga

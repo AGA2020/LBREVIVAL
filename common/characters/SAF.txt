@@ -441,7 +441,7 @@ characters={
 			idea_token = SAF_jeannot_de_la_tourier
 			ledger = navy
 			allowed = {
-				original_tag = SAF
+				original_tag = RAJ
 			}
 			traits = {
 				navy_screen_2

@@ -106,6 +106,7 @@ recruit_character = NZL_w_a_veitch_milne
 recruit_character = NZL_walter_nash
 recruit_character = SAF_adolf_malan
 recruit_character = SAF_c_de_weenburg_du_toit
+recruit_character = SAF_jeannot_de_la_tourier
 
 
 if = {
