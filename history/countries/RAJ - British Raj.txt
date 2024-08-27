@@ -176,7 +176,7 @@ if = {
 	}
 }
 
-set_convoys = 145
+set_convoys = 215
 
 640 = { #Mandalay
 	add_dynamic_modifier = { modifier = dense_rural_infrastructure }

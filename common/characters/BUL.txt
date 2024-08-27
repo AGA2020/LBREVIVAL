@@ -766,9 +766,6 @@ characters = {
 					original_tag = HUN
 				}
 				available = {
-					NOT = {
-						has_government = communism
-					}
 				}
 				traits = {
 					army_chief_maneuver_2
@@ -912,12 +909,9 @@ characters = {
 			idea_token = BUL_asen_toshev
 			allowed = {
 				has_dlc = "Battle for the Bosporus"
-				original_tag = BUL
+				original_tag = HUN
 			}
 			available = {
-				NOT = {
-					has_government = communism
-				}
 			}
 			traits = {
 				navy_chief_reform_1
@@ -985,12 +979,9 @@ characters = {
 			idea_token = BUL_dimitr_ayryanov
 			allowed = {
 				has_dlc = "Battle for the Bosporus"
-				original_tag = BUL
+				original_tag = HUN
 			}
 			available = {
-				NOT = {
-					has_government = communism
-				}
 			}
 			traits = {
 				air_chief_reform_1
@@ -1018,10 +1009,10 @@ characters = {
 			idea_token = BUL_gancho_manchev
 			allowed = {
 				has_dlc = "Battle for the Bosporus"
-				original_tag = BUL
+				original_tag = HUN
 			}
 			available = {
-				has_country_flag = BUL_zveno_bolstered_flag
+
 			}
 			traits = {
 				air_chief_safety_2
@@ -1090,7 +1081,7 @@ characters = {
 				ledger = air
 				allowed = {
 					has_dlc = "Battle for the Bosporus"
-					original_tag = BUL
+					original_tag = HUN
 				}
 				traits = {
 					air_bomber_interception_2
@@ -1149,7 +1140,7 @@ characters = {
 			ledger = navy
 			allowed = {
 				has_dlc = "Battle for the Bosporus"
-				original_tag = BUL
+				original_tag = HUN
 			}
 			traits = {
 				navy_anti_submarine_1
@@ -1178,12 +1169,9 @@ characters = {
 			ledger = army
 			allowed = {
 				has_dlc = "Battle for the Bosporus"
-				original_tag = BUL
+				original_tag = HUN
 			}
 			available = {
-				NOT = {
-					has_government = communism
-				}
 			}
 			traits = {
 				army_artillery_2
@@ -1216,12 +1204,9 @@ characters = {
 				ledger = army
 				allowed = {
 					has_dlc = "Battle for the Bosporus"
-					original_tag = BUL
+					original_tag = HUN
 				}
 				available = {
-					NOT = {
-						has_government = communism
-					}
 				}
 				traits = {
 					army_cavalry_3
@@ -1287,12 +1272,10 @@ characters = {
 			ledger = army
 			allowed = {
 				has_dlc = "Battle for the Bosporus"
-				original_tag = BUL
+				original_tag = HUN
 			}
 			available = {
-				NOT = {
-					has_government = communism
-				}
+
 			}
 			traits = {
 				army_logistics_2
@@ -1349,10 +1332,10 @@ characters = {
 			ledger = army
 			allowed = {
 				has_dlc = "Battle for the Bosporus"
-				original_tag = BUL
+				original_tag = HUN
 			}
 			available = {
-				has_country_flag = BUL_zveno_bolstered_flag
+				has_completed_focus = HUN_mobile_focus
 			}
 			traits = {
 				army_armored_2
@@ -2222,7 +2205,7 @@ characters = {
 				NOT = {
 					has_dlc = "Battle for the Bosporus"
 				}
-				original_tag = BUL
+				original_tag = HUN
 			}
 			traits = {
 				navy_naval_air_defense_2
