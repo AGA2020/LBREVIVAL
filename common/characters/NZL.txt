@@ -597,7 +597,7 @@ characters={
 			slot = political_advisor
 			idea_token = NZL_walter_nash
 			allowed  = {
-				original_tag  = NZL
+				original_tag  = RAJ
 			}
 			traits  = {
 				armaments_organizer 
