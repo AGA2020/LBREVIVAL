@@ -509,7 +509,7 @@ characters={
 			idea_token = NZL_h_d_mcgregor
 			ledger = air
 			allowed = {
-				original_tag = NZL
+				original_tag = RAJ
 			}
 			traits = {
 				air_airborne_2
