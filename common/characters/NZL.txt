@@ -461,7 +461,7 @@ characters={
 			idea_token = NZL_norris_stephen_falla
 			ledger = army
 			allowed = {
-				original_tag = AST
+				original_tag = RAJ
 			}
 			traits = {
 				army_regrouping_2
