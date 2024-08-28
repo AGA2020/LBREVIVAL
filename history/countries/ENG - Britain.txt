@@ -517,7 +517,7 @@ recruit_character = CAN_george_jones
 recruit_character = CAN_raymond_collishaw
 recruit_character = CAN_guy_simonds
 recruit_character = CAN_lindsay_gordon
-
+recruit_character = CAN_john_murchie
 
 
 if = {

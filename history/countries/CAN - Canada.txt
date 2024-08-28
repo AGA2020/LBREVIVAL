@@ -54,7 +54,6 @@ recruit_character = CAN_james_d_prentice
 recruit_character = CAN_harry_dewolf
 recruit_character = CAN_lloyd_samuel_breadner
 recruit_character = CAN_george_pearkes
-recruit_character = CAN_john_murchie
 recruit_character = CAN_harold_edwards
 recruit_character = CAN_frederick_m_w_harvey
 recruit_character = CAN_robert_leckie
