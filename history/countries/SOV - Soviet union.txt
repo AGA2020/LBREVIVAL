@@ -154,6 +154,23 @@ if = {
 	recruit_character = SOV_anton_denikin
 }
 
+recruit_character = MON_haidav
+recruit_character = MON_vg_pyrselov
+recruit_character = MON_buyannmeh
+recruit_character = MON_horloogiyn_choybalsan
+recruit_character = MON_dashdorj
+recruit_character = MON_dansrabilegyin_dogsam
+recruit_character = MON_yundunwangcug
+recruit_character = MON_pai_yun_ti
+recruit_character = TAN_rugalinskij
+recruit_character = TAN_v_i_kulikovskij
+recruit_character = TAN_grinchik
+recruit_character = TAN_tulberdiev
+recruit_character = TAN_homushku_churguj_ool
+recruit_character = TAN_kechir_ool
+recruit_character = TAN_s_t_perilenko
+recruit_character = TAN_vladimir_sokoline
+recruit_character = TAN_sodmon_balchor
 
 #Initialize character flags Part I (aka who's safe)
 SOV_mikhail_kalinin = {
