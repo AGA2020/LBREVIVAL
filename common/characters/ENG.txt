@@ -9,32 +9,6 @@ characters={
 				small="GFX_idea_ENG_winston_churchill"
 			}
 		}
-		advisor={
-			slot = political_advisor
-			idea_token = ENG_winston_churchill
-			available  = {
-				has_government  = neutrality 
-				has_completed_focus  = ENG_the_kings_party 
-				if  = {
-					limit  = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state  = autonomy_supervised_state
-					}
-				}
-			}
-			allowed  = {
-				original_tag  = ENG
-				has_dlc = "Man the Guns"
-			}
-			traits  = {
-				royalist_bulldog 
-			}
-			ai_will_do  = {
-				factor  = 1.000
-			}
-		}
 
 		country_leader={
 			ideology=conservatism
@@ -69,24 +43,6 @@ characters={
 			}
 			army={
 				small="GFX_idea_ENG_oswald_mosley"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = ENG_oswald_mosley
-			available  = {
-				has_government  = neutrality 
-				has_completed_focus  = ENG_the_kings_party 
-			}
-			allowed  = {
-				original_tag  = ENG
-				has_dlc = "Man the Guns"
-			}
-			traits  = {
-				economic_organizer 
-			}
-			ai_will_do  = {
-				factor  = 1.000
 			}
 		}
 		
