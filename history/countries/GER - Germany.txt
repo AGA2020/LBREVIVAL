@@ -481,6 +481,30 @@ recruit_character = GER_august_von_mackensen
 
 recruit_character = GER_alexander_von_falkenhausen #Not visible unless recalled from China
 
+recruit_character = FIN_vilho_petter_nenonen
+recruit_character = FIN_carl_mannerheim
+recruit_character = FIN_aksel_airo
+recruit_character = FIN_olavi_arho
+recruit_character = FIN_karl_oesch
+recruit_character = FIN_valio_porvari
+recruit_character = FIN_lauri_tiainen
+recruit_character = FIN_harald_ohquist
+recruit_character = FIN_frans_helminen
+recruit_character = FIN_kaarlo_somerto
+recruit_character = FIN_reino_hallamaa
+recruit_character = FIN_aimo_lahti
+recruit_character = FIN_urho_kekkonen
+recruit_character = FIN_ralf_torngren
+recruit_character = FIN_ernst_von_born
+recruit_character = FIN_risto_ryti
+recruit_character = FIN_hilja_riipinen
+recruit_character = FIN_vilho_annala
+recruit_character = FIN_elias_simojoki
+recruit_character = FIN_vilho_helanen
+recruit_character = FIN_reino_ala_kulju
+recruit_character = FIN_ilmari_kianto
+recruit_character = FIN_vaino_tanner
+recruit_character = FIN_miina_sillanpaa
 
 if = {
 	limit = {
