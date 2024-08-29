@@ -503,7 +503,12 @@ recruit_character = JAP_kingoro_hashimoto
 recruit_character = JAP_sanzo_nosaka
 recruit_character = JAP_hiroshi_oshima
 recruit_character = JAP_kijuro_shidehara
-
+recruit_character = MAN_guan_xingde
+recruit_character = MAN_yin_zuoqian
+recruit_character = MAN_nakajima_kesago
+recruit_character = MAN_yonimitsu_kasahara
+recruit_character = MAN_megata_toshiro
+recruit_character = MAN_songgotu_zhanshan
 
 if = {
 	limit = {
