@@ -517,6 +517,7 @@ recruit_character = SIA_phraya_thayarnpikart
 recruit_character = SIA_phraya_chalermarkiart
 recruit_character = SIA_thawee_punyaketu
 
+
 if = {
 	limit = {
 		has_dlc = "La Resistance"
