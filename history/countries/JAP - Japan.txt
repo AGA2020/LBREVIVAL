@@ -509,6 +509,13 @@ recruit_character = MAN_nakajima_kesago
 recruit_character = MAN_yonimitsu_kasahara
 recruit_character = MAN_megata_toshiro
 recruit_character = MAN_songgotu_zhanshan
+recruit_character = SIA_tianliang_huntrakool
+recruit_character = SIA_thawon_thamrongnawasawat
+recruit_character = SIA_phraya_preechacholayudha
+recruit_character = SIA_pridi_phanomyong
+recruit_character = SIA_phraya_thayarnpikart
+recruit_character = SIA_phraya_chalermarkiart
+recruit_character = SIA_thawee_punyaketu
 
 if = {
 	limit = {
