@@ -172,12 +172,13 @@ characters={
 				original_tag = GER
 			}
 			available = {
+				has_political_power > 0
 				has_completed_focus = GER_army_innovation
 			}
 			traits = {
 				army_armored_3
 			}
-			cost = 200
+			cost = 0
 			ai_will_do = {
 				factor = 8.000
 			}

@@ -116,11 +116,12 @@ characters = {
 				original_tag = GER
 			}
 			available = {
+				has_political_power > 0
 			}
 			traits = {
 				army_chief_defensive_3
 			}
-			cost = 200
+			cost = 0
 			ai_will_do = {
 				base = 1.000
 			}
@@ -603,18 +604,12 @@ characters = {
 				original_tag = GER
 			}
 			available = {
-				NOT = { has_government = communism }
-				if = {
-					limit = {
-						has_character_flag = FIN_anti_fascist_character_flag
-					}
-					NOT = { has_government = fascism }
-				}
+				has_political_power > 0
 			}
 			traits = {
 				army_chief_planning_2
 			}
-			cost = 100
+			cost = 0
 			ai_will_do = {
 				base = 1.000
 			}
