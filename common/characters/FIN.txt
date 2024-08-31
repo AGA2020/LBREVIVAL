@@ -189,10 +189,13 @@ characters = {
 			allowed = {
 				original_tag = GER
 			}
+			available = {
+				has_political_power > 0
+			}
 			traits = {
 				army_artillery_3
 			}
-			cost = 200
+			cost = 0
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1044,12 +1047,12 @@ characters = {
 				original_tag = GER
 			}
 			available = {
-				NOT = { has_government = communism }
+				has_political_power > 0
 			}
 			traits = {
 				army_regrouping_3
 			}
-			cost = 200
+			cost = 0
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1070,10 +1073,13 @@ characters = {
 			allowed = {
 				original_tag = GER
 			}
+			available = {
+				has_political_power > 0
+			}
 			traits = {
 				air_air_superiority_2
 			}
-			cost = 100
+			cost = 0
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1094,10 +1100,13 @@ characters = {
 			allowed = {
 				original_tag = GER
 			}
+			available = {
+				has_political_power > 0
+			}
 			traits = {
 				army_commando_2
 			}
-			cost = 100
+			cost = 0
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1118,10 +1127,13 @@ characters = {
 			allowed = {
 				original_tag = GER
 			}
+			available = {
+				has_political_power > 0
+			}
 			traits = {
 				army_entrenchment_2
 			}
-			cost = 100
+			cost = 0
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1143,12 +1155,12 @@ characters = {
 				original_tag = GER
 			}
 			available = {
-
+				has_political_power > 0
 			}
 			traits = {
 				army_concealment_2
 			}
-			cost = 100
+			cost = 0
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1195,10 +1207,13 @@ characters = {
 			allowed = {
 				original_tag = GER
 			}
+			available = {
+				has_political_power > 0
+			}
 			traits = {
 				army_artillery_1
 			}
-			cost = 50
+			cost = 0
 			ai_will_do = {
 				base = 1.000
 			}
@@ -1220,7 +1235,7 @@ characters = {
 				original_tag = GER
 			}
 			available = {
-				NOT = { has_government = communism }
+				has_political_power > 0
 			}
 			traits = {
 				army_radio_intelligence_2
@@ -1228,7 +1243,7 @@ characters = {
 			research_bonus = {
 				electronics = 0.10
 			}
-			cost = 150
+			cost = 0
 			ai_will_do = {
 				base = 1.000
 			}

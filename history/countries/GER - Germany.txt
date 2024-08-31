@@ -505,6 +505,7 @@ recruit_character = FIN_reino_ala_kulju
 recruit_character = FIN_ilmari_kianto
 recruit_character = FIN_vaino_tanner
 recruit_character = FIN_miina_sillanpaa
+recruit_character = GER_nikolaus_von_falkenhorst
 
 if = {
 	limit = {
