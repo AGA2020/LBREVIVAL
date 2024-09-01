@@ -1582,7 +1582,7 @@ characters={
 				has_political_power > 0
 			}
 			traits = {
-				fascist_demagogue propaganda_expert 
+				propaganda_expert_goebbels
 			}
 			do_effect = {
 				NOT = {

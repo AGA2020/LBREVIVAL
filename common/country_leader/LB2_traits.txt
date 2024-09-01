@@ -14,4 +14,14 @@ leader_traits = {
 	    industrial_capacity_factory = 0.05
 	}
 
+	propaganda_expert_goebbels = {
+		sprite = 13
+		political_power_cost = 0.15
+		war_support_factor = 0.1
+		fascism_drift = 0.1
+		ai_will_do = {
+			factor = 320
+		}
+	}
+
 }

@@ -7050,6 +7050,7 @@ leader_traits = {
 	#Hess
 	amateur_aviator_hess = {
 		sprite = 1
+		political_power_cost = 0.15
 		political_power_factor = 0.15
 		equipment_bonus = {
 			medium_plane_fighter_airframe = {
