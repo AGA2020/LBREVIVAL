@@ -5827,6 +5827,7 @@ leader_traits = {
 	silent_workhorse = {
 		random = yes
 		sprite = 13
+		political_power_cost = 0.15
 		political_power_factor = 0.15
 
 		ai_will_do = {
@@ -5836,6 +5837,7 @@ leader_traits = {
 
 	prince_of_terror = {
 		sprite = 13
+		political_power_cost = 0.15
 		resistance_damage_to_garrison = -0.25
 		foreign_subversive_activites = -0.3
 		non_core_manpower = 0.05
@@ -5848,6 +5850,7 @@ leader_traits = {
 	compassionate_gentleman = {
 		random = yes
 		sprite = 13
+		political_power_cost = 0.15
 		opinion_gain_monthly_factor = 0.15
 		resistance_damage_to_garrison = -0.15
 
@@ -5858,6 +5861,7 @@ leader_traits = {
 
 	backroom_backstabber = {
 		sprite = 13
+		political_power_cost = 0.15
 		subversive_activites_upkeep = -0.25
 		drift_defence_factor = 0.25
 
@@ -5869,6 +5873,7 @@ leader_traits = {
 	smooth_talking_charmer = {
 		random = yes
 		sprite = 13
+		political_power_cost = 0.15
 		improve_relations_maintain_cost_factor = -0.5
 		trade_opinion_factor = 0.10
 
@@ -5880,6 +5885,7 @@ leader_traits = {
 	ideological_crusader = {
 		random = yes
 		sprite = 13
+		political_power_cost = 0.15
 		opinion_gain_monthly_same_ideology_factor = 1.0
 		party_popularity_stability_factor = 0.1
 
@@ -5891,6 +5897,7 @@ leader_traits = {
 	fortification_engineer = {
 		sprite = 10
 		random = yes
+		political_power_cost = 0.15
 		production_speed_bunker_factor = 0.2
 		production_speed_coastal_bunker_factor = 0.2
 		production_speed_anti_air_building_factor = 0.2
@@ -5903,6 +5910,7 @@ leader_traits = {
 	war_industrialist = {
 		sprite = 10
 		random = yes
+		political_power_cost = 0.15
 		production_speed_arms_factory_factor = 0.1
 		production_speed_dockyard_factor = 0.1
 		production_speed_fuel_silo_factor = 0.1
@@ -5915,6 +5923,25 @@ leader_traits = {
 	captain_of_industry = {
 		sprite = 10
 		random = yes
+		political_power_cost = 0.15
+		production_speed_industrial_complex_factor = 0.1
+		production_speed_infrastructure_factor = 0.1
+		production_speed_rail_way_factor = 0.1
+		production_speed_synthetic_refinery_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1.8
+				date < 1939.1.1
+			}
+		}
+	}
+
+	captain_of_industry_cheap_ger = {
+		sprite = 10
+		random = yes
+		political_power_cost = 0.075
 		production_speed_industrial_complex_factor = 0.1
 		production_speed_infrastructure_factor = 0.1
 		production_speed_rail_way_factor = 0.1
@@ -5932,6 +5959,7 @@ leader_traits = {
 	financial_expert = {
 		sprite = 10
 		random = yes
+		political_power_cost = 0.15
 		consumer_goods_factor = -0.15
 
 		ai_will_do = {
@@ -5962,6 +5990,7 @@ leader_traits = {
 	armaments_organizer = {
 		sprite = 10
 		random = yes
+		political_power_cost = 0.15
 		conversion_cost_civ_to_mil_factor = -0.2
 		production_speed_supply_node_factor = 0.5
 		# civ_to_mil_industry_conversion_rate = -1
@@ -5983,6 +6012,7 @@ leader_traits = {
 	quartermaster_general = {
 		sprite = 10
 		random = yes
+		political_power_cost = 0.15
 		production_speed_air_base_factor = 0.15
 		production_speed_naval_base_factor = 0.15
 		production_speed_rocket_site_factor = 0.15

@@ -1453,7 +1453,9 @@ characters={
 			allowed = {
 				original_tag = GER
 			}
+			cost = 0
 			available = {
+				has_political_power > 0
 				has_completed_focus = GER_west_wall 
 			}
 			traits = {
@@ -1475,8 +1477,12 @@ characters={
 		advisor={
 			slot = political_advisor
 			idea_token = speer
+			cost = 0
 			allowed = {
 				original_tag = GER
+			}
+			available = {
+				has_political_power > 0
 			}
 			traits = {
 				armaments_organizer 
@@ -1494,18 +1500,19 @@ characters={
 		advisor={
 			slot = political_advisor
 			idea_token = hjalmar_schacht
-			cost = 75.000
+			cost = 0
 			allowed = {
 				original_tag = GER
 			}
 			available = {
+				has_political_power > 0
 				has_completed_focus = GER_four_year_plan 
 				not = {
 					has_completed_focus = GER_demand_sudetenland 
 				}
 			}
 			traits = {
-				captain_of_industry 
+				captain_of_industry_cheap_ger 
 			}
 			ai_will_do = {
 				factor = 2.000
@@ -1523,8 +1530,12 @@ characters={
 		advisor={
 			slot = political_advisor
 			idea_token = walther_funk
+			cost = 0
 			allowed = {
 				original_tag = GER
+			}
+			available = {
+				has_political_power > 0
 			}
 			traits = {
 				war_industrialist 
@@ -1566,16 +1577,9 @@ characters={
 			allowed = {
 				original_tag = GER
 			}
+			cost = 0
 			available = {
-				has_government = fascism 
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
+				has_political_power > 0
 			}
 			traits = {
 				fascist_demagogue propaganda_expert 
@@ -1604,14 +1608,12 @@ characters={
 			allowed = {
 				original_tag = GER
 			}
+			cost = 0
 			available = {
 				NOT = {
 					has_country_flag = flight_of_hess 
 				}
-				OR = {
-					has_government = fascism 
-					has_country_flag = GER_reinstated_nazi_leadership 
-				}
+				has_political_power > 0
 			}
 			traits = {
 				amateur_aviator_hess
@@ -1639,11 +1641,9 @@ characters={
 			allowed = {
 				original_tag = GER
 			}
+			cost = 0	
 			available = {
-				OR = {
-					has_government = fascism 
-					has_country_flag = GER_reinstated_nazi_leadership 
-				}
+				has_political_power > 0
 			}
 			on_add = {
 				custom_effect_tooltip = GER_SS_himmler_recruit
@@ -1667,11 +1667,9 @@ characters={
 			allowed = {
 				original_tag = GER
 			}
+			cost = 0
 			available = {
-				OR = {
-					has_government = fascism 
-					has_country_flag = GER_reinstated_nazi_leadership 
-				}
+				has_political_power > 0
 			}
 			ai_will_do = {
 				factor = 201.000
@@ -1695,11 +1693,9 @@ characters={
 			allowed = {
 				original_tag = GER
 			}
+			cost = 0
 			available = {
-				OR = {
-					has_government = fascism 
-					has_country_flag = GER_reinstated_nazi_leadership 
-				}
+				has_political_power > 0
 			}
 			traits = {
 				backroom_backstabber 
@@ -1722,6 +1718,10 @@ characters={
 			idea_token = konstantin_von_neurath
 			allowed = {
 				original_tag = GER
+			}
+			cost = 0
+			available = {
+				has_political_power > 0
 			}
 			traits = {
 				smooth_talking_charmer 
