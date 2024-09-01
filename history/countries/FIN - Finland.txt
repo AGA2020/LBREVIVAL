@@ -349,10 +349,6 @@ if = {
 	FIN_juho_heiskanen = {
 		set_character_flag = FIN_anti_communist_character_flag
 	}
-	GER_nikolaus_von_falkenhorst = {
-		set_character_flag = FIN_anti_communist_character_flag
-	}
-
 	
 	FIN_aarne_sihvo = {
 		set_character_flag = FIN_anti_fascist_character_flag
