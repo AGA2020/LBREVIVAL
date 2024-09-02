@@ -1567,34 +1567,16 @@ characters = {
 				idea_token = BUL_nikola_petkov
 				allowed = {
 					has_dlc = "Battle for the Bosporus"
-					original_tag = BUL
+					original_tag = HUN
 				}
 				available = {
-					has_country_flag = BUL_appointed_bzns_members_flag 
+
 				}
 				traits = {
 					leader_of_the_agrarian_union 
 				}
 				ai_will_do = {
 					base = 3.000
-					modifier = {
-						factor = 10
-						OR = {
-							BUL_is_monarchist_ferdinand_ai = yes
-							BUL_is_historical_ai = yes
-						}
-						NOT = { has_completed_focus = BUL_illusions_of_a_non_partisan_system }
-						democratic < 0.2
-					}
-					modifier = {
-						factor = 0.01
-						OR = {
-							BUL_is_monarchist_ferdinand_ai = yes
-							BUL_is_historical_ai = yes
-						}
-						has_completed_focus = BUL_illusions_of_a_non_partisan_system
-						democratic > 0.8
-					}
 				}
 			}
 		}
@@ -2133,16 +2115,9 @@ characters = {
 			idea_token = BUL_kimon_georgiev
 			allowed = {
 				has_dlc = "Battle for the Bosporus"
-				original_tag = BUL
+				original_tag = HUN
 			}
 			available = {
-				has_country_flag = BUL_appointed_zveno_members_flag 
-				NOT = {
-					has_country_leader = {
-						character = BUL_kimon_georgiev
-						ruling_only = yes 
-					}
-				}
 			}
 			traits = {
 				technocrat 

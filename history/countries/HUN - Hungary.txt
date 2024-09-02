@@ -103,40 +103,6 @@ if = {
 		modifier = BFTB_incongruous_neighbors
 	}
 }
-recruit_character = ROM_nicolae_sova
-recruit_character = ROM_gheorghe_jienescu
-recruit_character = ROM_gheorghe_avramescu
-recruit_character = ROM_gheorghe_mihail
-recruit_character = ROM_paul_teodorescu
-recruit_character = ROM_gheorghe_vasiliu
-recruit_character = ROM_petru_groza
-recruit_character = BUL_sava_ivanov
-recruit_character = BUL_konstantin_lukash
-recruit_character = BUL_vasil_boydev
-recruit_character = BUL_asen_toshev
-recruit_character = BUL_dimitr_ayryanov
-recruit_character = BUL_gancho_manchev
-recruit_character = BUL_stoyan_stoyanov
-recruit_character = BUL_stefan_tsanev
-recruit_character = BUL_ivan_sapundzhiev
-recruit_character = BUL_atanas_zhilkov
-recruit_character = BUL_trifon_trifonov
-recruit_character = BUL_stoyan_trendafilov
-recruit_character = BUL_bonyu_stoev_pironkov
-
-set_politics = {
-	ruling_party = neutrality
-	last_election = "1935.3.31"
-	election_frequency = 48
-	elections_allowed = yes
-}
-set_popularities = {
-	democratic = 25
-	fascism = 31
-	neutrality = 44
-}
-
-#Start Horty as neutral if DOD
 recruit_character = HUN_miklos_horthy
 recruit_character = HUN_matyas_rakosi
 recruit_character = HUN_arpad_szakasits
@@ -167,3 +133,40 @@ recruit_character = HUN_kalman_daranyi
 recruit_character = HUN_lajos_remenyi_schneller
 recruit_character = HUN_gusztav_gratz
 recruit_character = HUN_gyula_gombos_de_jakfa
+recruit_character = ROM_nicolae_sova
+recruit_character = ROM_gheorghe_jienescu
+recruit_character = ROM_gheorghe_avramescu
+recruit_character = ROM_gheorghe_mihail
+recruit_character = ROM_paul_teodorescu
+recruit_character = ROM_gheorghe_vasiliu
+recruit_character = ROM_petru_groza
+recruit_character = BUL_sava_ivanov
+recruit_character = BUL_konstantin_lukash
+recruit_character = BUL_vasil_boydev
+recruit_character = BUL_asen_toshev
+recruit_character = BUL_dimitr_ayryanov
+recruit_character = BUL_gancho_manchev
+recruit_character = BUL_stoyan_stoyanov
+recruit_character = BUL_stefan_tsanev
+recruit_character = BUL_ivan_sapundzhiev
+recruit_character = BUL_atanas_zhilkov
+recruit_character = BUL_trifon_trifonov
+recruit_character = BUL_stoyan_trendafilov
+recruit_character = BUL_bonyu_stoev_pironkov
+recruit_character = BUL_kimon_georgiev
+recruit_character = BUL_nikola_petkov
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.3.31"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 25
+	fascism = 31
+	neutrality = 44
+}
+
+#Start Horty as neutral if DOD

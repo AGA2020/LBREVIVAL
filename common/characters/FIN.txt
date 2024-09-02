@@ -1429,7 +1429,7 @@ characters = {
 			}
 			available = {
 			}
-			cost = 150
+			cost = 0
 			traits = {
 				ideological_crusader 
 			}

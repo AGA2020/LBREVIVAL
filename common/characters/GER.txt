@@ -1785,8 +1785,10 @@ characters={
 			slot = political_advisor
 			idea_token = ger_wilhelm_canaris
 			available = {
+				has_political_power > 0
 				has_intelligence_agency = yes 
 			}
+			cost = 0
 			allowed = {
 				original_tag = GER
 				has_dlc = "La Resistance"
