@@ -155,6 +155,7 @@ recruit_character = BUL_stoyan_trendafilov
 recruit_character = BUL_bonyu_stoev_pironkov
 recruit_character = BUL_kimon_georgiev
 recruit_character = BUL_nikola_petkov
+recruit_character = BUL_aleksandar_tsankov
 
 
 set_politics = {

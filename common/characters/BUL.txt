@@ -1887,13 +1887,9 @@ characters = {
 			idea_token = BUL_aleksandar_tsankov
 			allowed = {
 				has_dlc = "Battle for the Bosporus"
-				original_tag = BUL
+				original_tag = HUN
 			}
 			available = {
-				has_country_flag = BUL_appointed_nsm_members_flag 
-				NOT = {
-					has_government = communism 
-				}
 			}
 			traits = {
 				statism_adept 

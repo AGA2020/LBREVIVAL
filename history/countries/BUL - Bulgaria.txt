@@ -222,7 +222,6 @@ if = { #DLC
 	recruit_character = BUL_dimitrana_ivanova
 	recruit_character = BUL_bogdan_filov
 	recruit_character = BUL_stoycho_mushanov
-	recruit_character = BUL_aleksandar_tsankov
 	recruit_character = BUL_todor_pavlov
 	recruit_character = BUL_ivan_dochev
 	recruit_character = BUL_georgi_ivanov_kyoseivanov
