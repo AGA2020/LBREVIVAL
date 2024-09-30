@@ -891,6 +891,10 @@ technologies = {
 		category_line_artillery = {
 			default_morale = 0.2
 		}
+
+		category_cavalry = {
+			default_morale = 0.2
+		}		
 		
 		signal_company = {
 			battalion_mult = {
@@ -1340,6 +1344,10 @@ technologies = {
 		
 		xor = { mobile_warfare superior_firepower mass_assault } 
 	
+		category_cavalry = {
+			supply_consumption = -0.02
+		}
+
 		max_dig_in = 10
 		dig_in_speed_factor = 0.25 #25% bonus
 		
@@ -1989,7 +1997,14 @@ technologies = {
 			cat_mass_assault
 		}
 
+		recon = {
+			maximum_speed = 0.15
+		}
 		
+		category_cavalry = {
+			maximum_speed = 0.15
+		}		
+
 		folder = {
 			name = land_doctrine_folder
 			position = { x = 0 y = 2 }
@@ -2363,7 +2378,7 @@ technologies = {
 		military_police = {
 			battalion_mult = {
 				category = category_cavalry
-				suppression = 0.50
+				suppression = 0.35
 				add = yes
 			}
 		}
