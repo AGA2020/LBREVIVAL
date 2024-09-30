@@ -110,4 +110,3 @@ recruit_character = SAF_leonard_beyers
 recruit_character = SAF_james_mitchell_baker
 recruit_character = SAF_j_f_van_rensburg
 recruit_character = SAF_e_g_jansen
-recruit_character = SAF_nicolaas_havenga

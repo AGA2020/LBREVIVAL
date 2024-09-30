@@ -1764,6 +1764,10 @@ characters={
 			available = {
 
 			}
+			cost = 0
+			available = {
+				has_political_power > 0
+			}
 			traits = {
 				economist 
 			}
