@@ -127,7 +127,7 @@ adjacency_rule =
 	}
 	neutral =
 	{
-		army = yes
+		army = no
 		navy = yes
 		submarine = yes
 		trade = yes
@@ -674,7 +674,7 @@ adjacency_rule =
 	}
 	neutral =
 	{
-		army = yes
+		army = no
 		navy = yes
 		submarine = yes
 		trade = yes

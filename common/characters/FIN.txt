@@ -1489,7 +1489,7 @@ characters = {
 			available = {
 
 			}
-			cost = 150
+			cost = 0
 			traits = {
 				white_liberal 
 			}
@@ -1518,7 +1518,7 @@ characters = {
 			}
 			available = {
 			}
-			cost = 150
+			cost = 0
 			traits = {
 				hurja_hilja
 			}
@@ -1597,7 +1597,7 @@ characters = {
 				}
 				available = {
 				}
-				cost = 150
+				cost = 0
 				traits = {
 					fascist_corporatist 
 				}
